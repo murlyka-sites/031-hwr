@@ -8,11 +8,14 @@
 	padding-right 150px
 	max-width 100%
 	width 350px
-	height 85px
+	height 60px
 	border-radius 10px
 	background white
 	box-shadow 0 10px 27px 1px rgba(51, 51, 102, .5)
 
+	@media (min-width $xs) {
+		height 85px
+	}
 
 	&__title {
 		color $color-denim-blue
@@ -23,7 +26,14 @@
 
 	&__icon {
 		position absolute
-		right -90px
+		right -60px
+		width 200px
+		height auto
+
+		@media (min-width $xs) {
+			right -90px
+			width 250px
+		}
 	}
 }
 
@@ -31,10 +41,13 @@
 	position relative
 	box-sizing border-box
 	padding 70px 40px 40px
-	width 290px
 	border-radius 5px
 	background white
 	box-shadow 0 6px 7px 1px rgba(168, 168, 168, .3)
+
+	@media (min-width $xs) {
+		width 290px
+	}
 
 	&__pr {
 		position absolute
@@ -46,12 +59,15 @@
 		width 115px
 		height auto
 		border-radius 50%
-
 	}
 
 	&__text {
 		font-weight 300
-		font-size 18px
+		font-size 14px
+
+		@media (min-width $sm) {
+			font-size 18px
+		}
 	}
 
 	&__title {
@@ -83,12 +99,17 @@
 .card-book {
 	box-sizing border-box
 	padding 20px
-	min-height 285px
-	max-width 300px
+
+
 	border-radius 10px
 	box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
 	font-size 22px
 	font-family "Open Sans", sans-serif
+
+	@media (min-width $xs) {
+		min-height 285px
+		max-width 300px
+	}
 
 	&__desc {
 		font-size 20px
@@ -114,12 +135,17 @@
 	&__budge {
 		margin 0 auto 5px
 		padding 3px
-		width 175px
-		border-radius 10px
+		width 140px
+		border-radius 9px
 		font-weight 600
-		font-size 12px
+		font-size 10px
 		font-family "Open Sans", sans-serif
 		text-transform uppercase
+
+		@media (min-width $sm) {
+			width 175px
+			font-size 12px
+		}
 
 		&_theme {
 			&_gold {
@@ -134,8 +160,12 @@
 	}
 
 	&__title {
-		font-size 22px
+		font-size 12px
 		font-family "Open Sans", sans-serif
+
+		@media (min-width $sm) {
+			font-size 22px
+		}
 	}
 
 	&__icon {

@@ -1,80 +1,164 @@
 .nested-main {
 	display flex
 	flex-direction column
-	align-items flex-end
+	align-items flex-start
+
+	@media (min-width $md) {
+		align-items flex-end
+	}
 
 	&__item {
-		display flex
-		flex-direction column
-		align-items flex-end
-		margin-top -30px
-		padding-right 55px
+		margin-top 5px
+		max-width 100%
+
+		@media (min-width $xs) {
+			display flex
+			flex-direction column
+			align-items flex-start
+			margin-top -30px
+			padding-left 30px
+		}
+
+		@media (min-width $md) {
+				align-items flex-end
+				padding-right 55px
+				padding-left 0
+		}
 	}
 }
 
 .nested-innovative {
-	display flex
-	flex-direction row-reverse
-	align-items flex-start
+
+	@media (min-width $xs) {
+		display flex
+		align-items flex-start
+	}
+
+	@media (min-width $md) {
+		flex-direction row-reverse
+	}
 
 	&__item {
+		margin auto
+		padding-top 50px
+
+		@media (min-width $xs) {
+			margin 0
+		}
+
 		&:nth-child(2) {
-			margin-top 85px
-			margin-right -185px
+			@media (min-width $xs) {
+				margin-top 85px
+				margin-left -210px
+			}
+
+			@media (min-width $md) {
+				margin-right -205px
+				margin-left 0
+			}
+
+			@media (min-width $lg) {
+				margin-right -185px
+			}
 		}
 
 		&:nth-child(3) {
-			margin-top 170px
-			margin-right -185px
+			@media (min-width $xs) {
+				margin-top 170px
+				margin-left -210px
+			}
+
+			@media (min-width $md) {
+				margin-right -205px
+				margin-left 0
+			}
+
+			@media (min-width $lg) {
+				margin-right -185px
+			}
 		}
 	}
 }
 
 .nested-course {
-	display flex
-	justify-content flex-end
+	@media (min-width $xs) {
+		display flex
+		justify-content flex-start
+	}
+
+	@media (min-width $md) {
+		justify-content flex-end
+	}
 
 	&__item {
+		margin-bottom 15px
+
 		&:nth-child(1) {
-			position relative
-			z-index 2
-			margin-top 80px
-			margin-right -80px
+			@media (min-width $xs) {
+				position relative
+				z-index 2
+				margin-top 80px
+				margin-right -80px
+			}
 		}
 	}
 }
 
 .nested-book {
-	display flex
-	justify-content flex-end
+	@media (min-width $xs) {
+		display flex
+		justify-content flex-start
+	}
+
+	@media (min-width $md) {
+		justify-content flex-end
+	}
 
 	&__item {
+		margin-bottom 15px
+
 		&:nth-child(1) {
-			position relative
-			z-index 2
-			margin-top 85px
-			margin-right -140px
+			@media (min-width $xs) {
+				position relative
+				z-index 2
+				margin-top 85px
+				margin-right -140px
+			}
 		}
 	}
 }
 
 .nested-gameplay {
 	display flex
-	justify-content flex-end
+	justify-content center
+
+	@media (min-width $md) {
+		justify-content flex-end
+	}
 
 	&__item {
 		&:nth-child(1) {
 			position relative
 			z-index 3
-			margin-top 100px
-			margin-right -140px
+			margin-top 40px
+			margin-right -60px
+
+			@media (min-width $xs) {
+				margin-top 100px
+				margin-right -140px
+			}
 		}
 
 		&:nth-child(2) {
 			position relative
 			z-index 2
-			margin-top 50px
-			margin-right -140px
+			margin-top 20px
+			margin-right -60px
+
+			@media (min-width $xs) {
+				margin-top 50px
+				margin-right -140px
+			}
 		}
 	}
 }
@@ -89,7 +173,11 @@
 		align-items flex-end
 		margin-top -16px
 		margin-left auto
-		padding-right 25px
+		max-width 100%
+
+		@media (min-width $sm) {
+			padding-right 25px
+		}
 
 		&:nth-child(1) {
 			padding-right 0

@@ -29,9 +29,10 @@ html(lang="ru")
 					p.slogan.offset-b-110 Готовься к ОГЭ, ЕГЭ по русскому языку, 
 						br
 						| углубляй свои знания, не выходя из дома
-					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
+					.hidden.visible-md
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
 				.section__column.section__column_pr
-					.nested-main
+					.section-main__nested.nested-main
 						.card-main
 							.card-main__title Учебник
 							img.card-main__icon(src="images/main-1.svg" width="250" heihgt="250" alt="Учебник")
@@ -47,10 +48,11 @@ html(lang="ru")
 									.card-main
 										.card-main__title Курсы
 										img.card-main__icon(src="images/main-4.svg" width="250" heihgt="250" alt="Курсы")
-
+					.visible.hidden-md
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
 		section.section-innovative.section.paper-verdepechat
 			.section__container.section-innovative__container
-				.section__column.section__column_desc
+				.section-innovative__column.section-innovative__column_desc
 					h2.h2.offset-b-40 Инновационное 
 						br
 						| образование для всех
@@ -61,8 +63,9 @@ html(lang="ru")
 						| которой повышаются знания русского языка, 
 						br
 						| а результат экзамена возрастает в среднем в 2 раза!
-					a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
-				.section__column.section__column_pr
+					.hidden.visible-md
+						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
+				.section-innovative__column.section-innovative__column_pr
 					.nested-innovative
 						.nested-innovative__item
 							.card-innovative
@@ -113,10 +116,9 @@ html(lang="ru")
 						br
 						| тренажёрах
 					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
-					p.slogan.offset-b-40.color-gray-blue Прокачивай свой русский в игровой
-						br
-						| форме
-					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+					p.slogan.offset-b-40.color-gray-blue Прокачивай свой русский в игровой форме
+					.hidden.visible-sm
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section__column.section__column_pr
 					.nested-training
 						.nested-training__item
@@ -165,11 +167,11 @@ html(lang="ru")
 					p.slogan.offset-b-30 Занятия проходят на нашем сайте в режиме 
 						br
 						| реального времени. Преподаватель всегда готов
-						br
 						| ответить на твой вопрос
-					a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
+					.hidden.visible-md
+						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
 				.section__column.section__column_pr
-					.nested-course
+					.nested-course.section-course__nested
 						.nested-course__item
 							.card-course.paper-indigo-creole
 								.card-course__title.text-center.offset-b-40 Курс подготовки
@@ -192,20 +194,17 @@ html(lang="ru")
 									| 14:00
 		section.section-book.section
 			.section__container.section-book__container
-				.section__column.section__column_desc
-					h2.h2.offset-b-40.color-marengo Изучай учебник,
-						br
+				.section-book__column.section-book__column_desc
+					h2.h2.offset-b-40.color-marengo Изучай учебник, 
 						| написанный
-						br
 						| простым языком
 					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
 					p.slogan.offset-b-40.color-gray-blue Мы первыми сделали по-настоящему понятный, 
-						br
 						| полезный и исчерпывающий учебник. 
-						br
 						| Он всегда под твоей рукой!
-					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
-				.section__column.section__column_pr
+					.hidden.visible-md
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+				.section-book__column.section-book__column_pr
 					.nested-book
 						.nested-book__item
 							.card-book.paper-indigo-creole
@@ -229,15 +228,16 @@ html(lang="ru")
 					p.slogan.offset-b-30.color-gray-blue.color-wet-asphalt Развивайся семимильными шагами, выполняя 
 						br
 						| задания от матрёшки Мани. Легко и просто!
-					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+					.hidden.visible-md
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section__column.section__column_pr
 					.nested-gameplay
 						.nested-gameplay__item
-							img(src="images/gameplay-red.svg" width="225" height="350" role="presentation")
+							img.section-gameplay__pr(src="images/gameplay-red.svg" width="225" height="350" role="presentation")
 						.nested-gameplay__item
-							img(src="images/gameplay-orange.svg" width="225" height="350" role="presentation")
+							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation")
 						.nested-gameplay__item
-							img(src="images/gameplay-blue.svg" width="225" height="350" role="presentation")
+							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation")
 		
 		section.section-teacher.section.paper-somon
 			.section__container.section-teacher__container
@@ -257,10 +257,11 @@ html(lang="ru")
 					p.slogan.offset-b-40 — Кандидат в мастера спорта по спортивной
 						br
 						| борьбе
-					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+					.hidden.visible-md
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr
 					img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович")
-		section.section-cost.section.paper-denim-blue
+		section.section-cost.section.paper-denim-blue(hidden)
 			.section__container.section-training__container
 				.section__column.section__column_desc
 					h2.h1.offset-b-30 Стоимость президентского
@@ -292,7 +293,7 @@ html(lang="ru")
 											.card-training__budge.card-training__budge_theme_gold БЕСПЛАТНО
 											.card-training__title 20 занятий курса ОГЭ или ЕГЭ
 											
-		section.section-register.section.paper-medium-magenta.text-center
+		section.section-register.section.paper-medium-magenta.text-center(hidden)
 			.section__container.section-register__container
 				h2.h1.offset-b-40 Зарегистрируйся и получи 
 					br
@@ -312,7 +313,7 @@ html(lang="ru")
 							|  и 
 							a.link(href="#") политики обработки персональных данных
 					button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(href="#") Начать обучение
-		footer.section-foo.section.paper-black-brown
+		footer.section-foo.section.paper-black-brown(hidden)
 			.section__container.section-foo__container
 				.section-foo__column.section-foo__column_social
 					.offset-b-50: ul.nested-social
@@ -329,7 +330,7 @@ html(lang="ru")
 					| Сделано с 
 					img.icon-heart(src="images/heart.png" width="16" height="16" alt="любовью")
 					|  в Татарстане
-		hidden
+		div(hidden)
 			.popup-politic#politic
 				include politic.html
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")

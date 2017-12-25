@@ -11,6 +11,7 @@
 @import "inc/card"
 @import "inc/nested"
 @import "inc/popup"
+@import "inc/hidden"
 
 .page {
 	font-family "Proxima Nova", sans-serif
@@ -36,9 +37,22 @@
 	left 0
 
 	&__container {
-		display flex
-		justify-content space-between
-		padding 20px 0
+		padding 20px 15px
+
+		@media (min-width $sm) {
+			display flex
+			justify-content space-between
+		}
+	}
+
+	&__column {
+		&_logo {
+			margin-bottom 10px
+
+			@media (min-width $sm) {
+				margin-bottom none
+			}
+		}
 	}
 
 	&__logo {}
@@ -48,75 +62,171 @@
 
 .section-main {
 	box-sizing border-box
-	padding 150px 0 100px
+	padding 150px 0 40px
+
+	@media (min-width $md) {
+		padding 150px 0 100px
+	}
 
 	&__container {
-		display flex
-		align-items flex-start
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			align-items flex-start
+			justify-content space-between
+		}
+	}
+
+	&__nested {
+		margin-bottom 20px
+
+		@media (min-width $md) {
+			margin-bottom 0
+		}
 	}
 }
 
 .section-innovative {
-	padding 100px 0
+	padding 50px 0
+
+	@media (min-width $md) {
+		padding 100px 0
+	}
 
 	&__container {
-		display flex
-		align-items flex-start
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			align-items flex-start
+			justify-content space-between
+		}
+	}
+
+
+	&__column {
+		&_desc {
+			@media (min-width $md) {
+				padding-right 10px
+			}
+		}
 	}
 }
 
 .section-training {
-	padding 80px 0 60px
+	padding 40px 0
+
+	@media (min-width $md) {
+		padding 80px 0 60px
+	}
 
 	&__container {
-		display flex
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			justify-content space-between
+		}
 	}
 }
 
 .section-course {
-	padding 120px 0 80px
+	padding 40px 0
+
+	@media (min-width $md) {
+		padding 120px 0 80px
+	}
 
 	&__container {
-		display flex
-		align-items flex-start
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			align-items flex-start
+			justify-content space-between
+		}
+	}
+
+	&__nested {
+
+		@media (min-width $md) {
+			padding-top 0
+		}
 	}
 }
 
 .section-book {
-	padding 60px 0 80px
+	padding 40px 0
+
+	@media (min-width $md) {
+		padding 60px 0 80px
+	}
 
 	&__container {
-		display flex
-		align-items flex-start
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			align-items flex-start
+			justify-content space-between
+		}
+	}
+
+	&__column {
+		@media (min-width $md) {
+			padding-right 10px
+		}
+
+		&_pr {
+			flex none
+		}
 	}
 }
 
 .section-gameplay {
-	padding 80px 0 95px
+	padding 40px 0
+
+	@media (min-width $md) {
+			padding 80px 0 95px
+	}
 
 	&__container {
-		display flex
-		align-items flex-start
-		justify-content space-between
+		@media (min-width $sm) {
+			display flex
+			align-items flex-start
+			justify-content space-between
+		}
+	}
+
+	&__pr {
+		width 120px
+		height auto
+
+		@media (min-width $xs) {
+			width 200px
+		}
+
+		@media (min-width $md) {
+			width 200px
+		}
+
+		@media (min-width $lg) {
+			width 225px
+			height auto
+		}
 	}
 }
 
 .section-teacher {
-	padding 80px 0 0
+	padding 40px 0 0
+
+	@media (min-width $md) {
+		padding 80px 0 0
+	}
 
 	&__container {
-		display flex
-		justify-content space-between
+		@media (min-width $md) {
+			display flex
+			justify-content space-between
+		}
 	}
 
 	&__column {
 		&_desc {
-			padding-bottom 80px
+			@media (min-width $md) {
+				padding-bottom 80px
+			}
 		}
 
 		&_pr {
@@ -127,6 +237,8 @@
 	&__pr {
 		display block
 		margin-top auto
+		max-width 100%
+		height auto
 	}
 }
 
