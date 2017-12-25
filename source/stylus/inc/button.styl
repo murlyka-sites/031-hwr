@@ -4,6 +4,16 @@
 	max-width 100%
 	width auto
 	border-radius 4px
+	transition color, background, box-shadow .3s
+
+	&:focus {
+		outline none
+		border-style dashed
+	}
+
+	&:hover {
+		box-shadow none
+	}
 
 	&_type {
 		&_link {
@@ -19,7 +29,9 @@
 		}
 
 		&_md {
+			padding 19px 25px
 			min-width 215px
+			font-weight 700
 			font-size 20px
 		}
 	}
@@ -33,11 +45,24 @@
 				background white
 				color $color-denim-blue
 			}
+		}
 
-			&:focus {
-				outline none
-				border 2px dashed
+		&_coral {
+			border 2px solid $color-coral
+			background $color-coral
+			color white
+
+			&:hover {
+				border 2px solid darken($color-coral, 15%)
+				background darken($color-coral, 15%)
+				color white
 			}
+		}
+	}
+
+	&_shadow {
+		&_coral {
+			box-shadow 0 10px 20px rgba(255, 112, 112, .35)
 		}
 	}
 }

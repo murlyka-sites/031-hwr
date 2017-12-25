@@ -46,32 +46,45 @@
   background: #000;
 }
 .h1 {
+  margin: 0;
   font-size: 60px;
   font-family: "Proxima Nova", sans-serif;
 }
 .h2 {
+  margin: 0;
   font-size: 55px;
   font-family: "Proxima Nova", sans-serif;
 }
 .h3 {
+  margin: 0;
   font-size: 48px;
   font-family: "Proxima Nova", sans-serif;
 }
 .h4 {
+  margin: 0;
   font-size: 36px;
   font-family: "Proxima Nova", sans-serif;
 }
 .h5 {
+  margin: 0;
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
 }
 .slogan {
+  margin: 0;
   font-size: 24px;
   font-family: "Proxima Nova", sans-serif;
 }
 .p {
+  margin: 0;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+}
+.gutter-b-30 {
+  margin-bottom: 30px;
+}
+.gutter-b-100 {
+  margin-bottom: 100px;
 }
 .button {
   display: inline-block;
@@ -79,6 +92,14 @@
   max-width: 100%;
   width: auto;
   border-radius: 4px;
+  transition: color, background, box-shadow 0.3s;
+}
+.button:focus {
+  outline: none;
+  border-style: dashed;
+}
+.button:hover {
+  box-shadow: none;
 }
 .button_type_link {
   text-decoration: none;
@@ -89,7 +110,9 @@
   font-size: 17px;
 }
 .button_size_md {
+  padding: 19px 25px;
   min-width: 215px;
+  font-weight: 700;
   font-size: 20px;
 }
 .button_theme_border-white {
@@ -100,15 +123,24 @@
   background: #fff;
   color: #194fea;
 }
-.button_theme_border-white:focus {
-  outline: none;
-  border: 2px dashed;
+.button_theme_coral {
+  border: 2px solid #ff7e60;
+  background: #ff7e60;
+  color: #fff;
+}
+.button_theme_coral:hover {
+  border: 2px solid #ff532b;
+  background: #ff532b;
+  color: #fff;
+}
+.button_shadow_coral {
+  box-shadow: 0 10px 20px rgba(255,112,112,0.35);
 }
 .page {
   font-family: "Proxima Nova", sans-serif;
 }
 .section-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -119,5 +151,8 @@
   padding: 20px 0;
 }
 .section-main {
-  min-height: 1000px;
+  box-sizing: border-box;
+  padding: 150px 0 100px;
+  min-height: 620px;
+  color: #fff;
 }
