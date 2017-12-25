@@ -45,6 +45,12 @@
 .paper-black {
   background: #000;
 }
+.color-marengo {
+  color: #4c5d6e;
+}
+.color-gray-blue {
+  color: #2c2d30;
+}
 .h1 {
   margin: 0;
   font-size: 60px;
@@ -94,6 +100,7 @@
   box-sizing: border-box;
   max-width: 100%;
   width: auto;
+  border-style: solid;
   border-radius: 4px;
   background-clip: padding-box;
   text-align: center;
@@ -112,39 +119,50 @@
 .button_size_sm {
   padding: 13px 25px;
   min-width: 200px;
+  border-width: 2px;
   font-size: 17px;
 }
 .button_size_md {
   padding: 19px 25px;
   min-width: 215px;
+  border-width: 3px;
   font-weight: 700;
   font-size: 20px;
 }
 .button_theme_border-white {
-  border: 2px solid #fff;
+  border-color: #fff;
   color: #fff;
 }
 .button_theme_border-white:hover {
   background: #fff;
   color: #194fea;
 }
+.button_theme_border-tomato {
+  border-color: #ff683f;
+  color: #ff4800;
+}
+.button_theme_border-tomato:hover {
+  border-color: #ff683f;
+  background-color: #ff683f;
+  color: #fff;
+}
 .button_theme_coral {
-  border: 2px solid #ff7e60;
+  border-color: #ff7e60;
   background-color: #ff7e60;
   color: #fff;
 }
 .button_theme_coral:hover {
-  border: 2px solid #ff532b;
+  border-color: #ff532b;
   background-color: #ff532b;
   color: #fff;
 }
 .button_theme_white {
-  border: 2px solid #fff;
+  border-color: #fff;
   background-color: #fff;
   color: #ff4800;
 }
 .button_theme_white:hover {
-  border: 2px solid #d9d9d9;
+  border-color: #d9d9d9;
   background-color: #d9d9d9;
   color: #ff4800;
 }
@@ -177,4 +195,8 @@
 .section-innovative {
   padding: 100px 0;
   color: #fff;
+}
+.section-training {
+  padding: 80px 0 60px;
+color
 }

@@ -3,6 +3,7 @@
 	box-sizing border-box
 	max-width 100%
 	width auto
+	border-style solid
 	border-radius 4px
 	background-clip padding-box
 	text-align center
@@ -28,6 +29,7 @@
 		&_sm {
 			padding 13px 25px
 			min-width 200px
+			border-width 2px
 			font-size 17px
 		}
 
@@ -53,33 +55,34 @@
 
 		&_border-tomato {
 			border-color $color-tomato
-			color white
+			color $color-cinnabar
 
 			&:hover {
-				background white
-				color $color-denim-blue
+				border-color $color-tomato
+				background-color $color-tomato
+				color white
 			}
 		}
 
 		&_coral {
-			border 2px solid $color-coral
+			border-color $color-coral
 			background-color $color-coral
 			color white
 
 			&:hover {
-				border 2px solid darken($color-coral, 15%)
+				border-color darken($color-coral, 15%)
 				background-color darken($color-coral, 15%)
 				color white
 			}
 		}
 
 		&_white {
-			border 2px solid white
+			border-color white
 			background-color white
 			color $color-cinnabar
 
 			&:hover {
-				border 2px solid darken(white, 15%)
+				border-color darken(white, 15%)
 				background-color darken(white, 15%)
 				color $color-cinnabar
 			}
