@@ -1,0 +1,22 @@
+.section__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.paper-royal-blue {
+  background: #4059f6 linear-gradient(28deg, #1c368e 0, #4059f6 100%);
+}
+.section-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.section-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.section-main {
+  min-height: 1000px;
+}
