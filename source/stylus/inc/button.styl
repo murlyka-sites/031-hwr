@@ -4,7 +4,10 @@
 	max-width 100%
 	width auto
 	border-radius 4px
+	background-clip padding-box
+	text-align center
 	transition color, background, box-shadow .3s
+
 
 	&:focus {
 		outline none
@@ -31,6 +34,7 @@
 		&_md {
 			padding 19px 25px
 			min-width 215px
+			border-width 3px
 			font-weight 700
 			font-size 20px
 		}
@@ -38,7 +42,17 @@
 
 	&_theme {
 		&_border-white {
-			border 2px solid white
+			border-color white
+			color white
+
+			&:hover {
+				background white
+				color $color-denim-blue
+			}
+		}
+
+		&_border-tomato {
+			border-color $color-tomato
 			color white
 
 			&:hover {
@@ -49,13 +63,25 @@
 
 		&_coral {
 			border 2px solid $color-coral
-			background $color-coral
+			background-color $color-coral
 			color white
 
 			&:hover {
 				border 2px solid darken($color-coral, 15%)
-				background darken($color-coral, 15%)
+				background-color darken($color-coral, 15%)
 				color white
+			}
+		}
+
+		&_white {
+			border 2px solid white
+			background-color white
+			color $color-cinnabar
+
+			&:hover {
+				border 2px solid darken(white, 15%)
+				background-color darken(white, 15%)
+				color $color-cinnabar
 			}
 		}
 	}
@@ -63,6 +89,10 @@
 	&_shadow {
 		&_coral {
 			box-shadow 0 10px 20px rgba(255, 112, 112, .35)
+		}
+
+		&_black {
+			box-shadow 0 10px 20px rgba(0, 0, 0, .2)
 		}
 	}
 }
