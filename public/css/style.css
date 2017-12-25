@@ -51,6 +51,9 @@
 .color-gray-blue {
   color: #2c2d30;
 }
+.color-wet-asphalt {
+  color: #454545;
+}
 .h1 {
   margin: 0;
   font-size: 60px;
@@ -91,6 +94,9 @@
 }
 .offset-b-40 {
   margin-bottom: 40px;
+}
+.offset-b-50 {
+  margin-bottom: 50px;
 }
 .offset-b-110 {
   margin-bottom: 100px;
@@ -215,4 +221,7 @@
 }
 .section-book {
   padding: 60px 0 80px;
+}
+.section-gameplay {
+  padding: 80px 0 95px;
 }
