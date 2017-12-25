@@ -1,0 +1,43 @@
+.button {
+	display inline-block
+	box-sizing border-box
+	max-width 100%
+	width auto
+	border-radius 4px
+
+	&_type {
+		&_link {
+			text-decoration none
+		}
+	}
+
+	&_size {
+		&_sm {
+			padding 13px 25px
+			min-width 200px
+			font-size 17px
+		}
+
+		&_md {
+			min-width 215px
+			font-size 20px
+		}
+	}
+
+	&_theme {
+		&_border-white {
+			border 2px solid white
+			color white
+
+			&:hover {
+				background white
+				color $color-denim-blue
+			}
+
+			&:focus {
+				outline none
+				border 2px dashed
+			}
+		}
+	}
+}

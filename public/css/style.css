@@ -55,6 +55,40 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: auto;
+  border-radius: 4px;
+}
+.button_type_link {
+  text-decoration: none;
+}
+.button_size_sm {
+  padding: 13px 25px;
+  min-width: 200px;
+  font-size: 17px;
+}
+.button_size_md {
+  min-width: 215px;
+  font-size: 20px;
+}
+.button_theme_border-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.button_theme_border-white:hover {
+  background: #fff;
+  color: #194fea;
+}
+.button_theme_border-white:focus {
+  outline: none;
+  border: 2px dashed;
+}
+.page {
+  font-family: "Proxima Nova", sans-serif;
+}
 .section-header {
   position: fixed;
   top: 0;

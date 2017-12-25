@@ -13,3 +13,12 @@ html(lang="ru")
 		- let ts = +Date.now();
 		link(rel="stylesheet", href="css/style.css?ts=" + ts)
 	body.page
+		.section-header.section
+			.section__container.section-header__container
+				.section-header__column.section-header__column_logo
+					a(href="#"): img.section-header__logo(src="images/logo-white.svg" width="241" height="38" alt="Логотип: Как правильно")
+				.section-header__column.section-header__column_auth
+					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#") Авторизация / регистрация
+						
+		section.section-main.section.paper-royal-blue
+			.section__container

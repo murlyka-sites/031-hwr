@@ -27,7 +27,7 @@ gulp.task('watch', function() {
 	watch('./source/sprite/*.png', taskSprite);
 	watch('./source/*.pug', taskPug).pipe(connect.reload());
 	watch('./source/less/*.less', taskLess).pipe(connect.reload());
-	watch('./source/stylus/*.styl');
+	watch('./source/stylus/*.styl', taskStylus).pipe(connect.reload());
 	watch('./source/images/*.*', taskImagemin).pipe(connect.reload());
 
 });
@@ -85,7 +85,8 @@ function taskImagemin() {
 			imagemin.jpegtran({progressive: true}),
 			imagemin.mozjpeg({progressive: true}),
 			imagemin.optipng({optimizationLevel: 7}),
-			imagemin.pngquant({quality: '85-100'})
+			imagemin.pngquant({quality: '85-100'}),
+			imagemin.svgo()
 		]))
 		.pipe(gulp.dest('public/images/'));
 }
