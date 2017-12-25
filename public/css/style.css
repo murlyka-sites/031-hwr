@@ -146,6 +146,16 @@
   background-color: #ff683f;
   color: #fff;
 }
+.button_theme_border-white-tomato {
+  border-color: #fff;
+  background-color: #ff683f;
+  color: #fff;
+}
+.button_theme_border-white-tomato:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #ff683f;
+}
 .button_theme_coral {
   border-color: #ff7e60;
   background-color: #ff7e60;
@@ -198,5 +208,8 @@
 }
 .section-training {
   padding: 80px 0 60px;
-color
+}
+.section-course {
+  padding: 120px 0 80px;
+  color: #fff;
 }
