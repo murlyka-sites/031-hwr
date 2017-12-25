@@ -6,6 +6,55 @@
 .paper-royal-blue {
   background: #4059f6 linear-gradient(28deg, #1c368e 0, #4059f6 100%);
 }
+.paper-verdepechat {
+  background: #f7ce68 linear-gradient(28deg, #fbab7e 0, #f7ce68 100%);
+}
+.paper-coral {
+  background: #ff7e60 linear-gradient(to right, #ff7e60 0, #ffbe84 100%);
+}
+.paper-orange-pink {
+  background: #ffb667 linear-gradient(67deg, #fffcab 0, #ffb667 100%);
+}
+.paper-somon {
+  background: #ecb26f;
+}
+.paper-denim-blue {
+  background: #194fea linear-gradient(-31deg, #194fea 0, #070b64 100%);
+}
+.paper-medium-magenta {
+  background: #9599e2 linear-gradient(28deg, #8bc6ec 0, #9599e2 100%);
+}
+.paper-black {
+  background: #000;
+}
+.h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.h2 {
+  font-size: 55px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.h3 {
+  font-size: 48px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.h4 {
+  font-size: 36px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.h5 {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+.slogan {
+  font-size: 24px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
 .section-header {
   position: fixed;
   top: 0;
