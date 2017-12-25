@@ -325,7 +325,13 @@ html(lang="ru")
 					a(href="#"): img.section-foo__market(src="images/app-store.svg" width="158" height="53" alt="app store")
 				.section-foo__column.section-foo__column_info
 					.offset-b-35: a.section-foo__link.color-white-aluminum(href="#") Обратная связь
-					.offset-b-35: a.section-foo__link.color-white-aluminum(href="#") Пользовательское соглашение
+					.offset-b-35: a.section-foo__link.color-white-aluminum(href="#politic" data-fancybox) Пользовательское соглашение
 					| Сделано с 
 					img.icon-heart(src="images/heart.png" width="16" height="16" alt="любовью")
 					|  в Татарстане
+		hidden
+			.popup-politic#politic
+				include politic.html
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")

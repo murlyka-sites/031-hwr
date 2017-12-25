@@ -480,6 +480,9 @@
 .nested-social__icon {
   display: block;
 }
+.popup-politic {
+  max-width: 875px;
+}
 .page {
   font-family: "Proxima Nova", sans-serif;
 }
