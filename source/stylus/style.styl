@@ -4,11 +4,28 @@
 @import "inc/paper"
 @import "inc/color"
 @import "inc/typo"
+@import "inc/text"
 @import "inc/gutter"
 @import "inc/button"
+@import "inc/field"
+@import "inc/card"
+@import "inc/nested"
 
 .page {
 	font-family "Proxima Nova", sans-serif
+}
+
+.link {
+	color $color-dark-blue
+	text-decoration none
+
+	&:hover {
+		text-decoration underline
+	}
+}
+
+.icon-heart {
+	vertical-align middle
 }
 
 .section-header {
@@ -31,38 +48,140 @@
 .section-main {
 	box-sizing border-box
 	padding 150px 0 100px
-	min-height 620px
-	color white
+
+	&__container {
+		display flex
+		align-items flex-start
+		justify-content space-between
+	}
 }
 
 .section-innovative {
 	padding 100px 0
-	color white
+
+	&__container {
+		display flex
+		align-items flex-start
+		justify-content space-between
+	}
 }
 
 .section-training {
 	padding 80px 0 60px
+
+	&__container {
+		display flex
+		justify-content space-between
+	}
 }
 
 .section-course {
 	padding 120px 0 80px
-	color white
+
+	&__container {
+		display flex
+		align-items flex-start
+		justify-content space-between
+	}
 }
 
 .section-book {
 	padding 60px 0 80px
+
+	&__container {
+		display flex
+		align-items flex-start
+		justify-content space-between
+	}
 }
 
 .section-gameplay {
 	padding 80px 0 95px
+
+	&__container {
+		display flex
+		align-items flex-start
+		justify-content space-between
+	}
 }
 
 .section-teacher {
-	padding 80px 0
-	color white
+	padding 80px 0 0
+
+	&__container {
+		display flex
+		justify-content space-between
+	}
+
+	&__column {
+		&_desc {
+			padding-bottom 80px
+		}
+
+		&_pr {
+			margin-top auto
+		}
+	}
+
+	&__pr {
+		display block
+		margin-top auto
+	}
 }
 
 .section-cost {
 	padding 140px 0 80px
-	color white
+}
+
+.section-register {
+	padding 90px 0 60px
+
+	&__form {
+		margin-bottom 50px
+	}
+}
+
+.section-foo {
+	padding 60px 0
+
+	&__container {
+		display flex
+		justify-content space-between
+	}
+
+	&__column {
+		&_market {
+			width 160px
+		}
+
+		&_info {
+			text-align right
+		}
+	}
+
+	&__market {
+		display block
+		width 100%
+	}
+
+	&__copy {
+		color white
+		font-weight 400
+		font-size 18px
+		font-family "Open Sans", sans-serif
+	}
+
+	&__link {
+		display inline-block
+		font-size 18px
+
+		&:hover {
+			text-decoration none
+		}
+	}
+
+	&__made {
+		font-weight 600
+		font-size 16px
+	}
 }

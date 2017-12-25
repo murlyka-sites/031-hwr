@@ -1,0 +1,144 @@
+.card-main {
+	position relative
+	display flex
+	align-items center
+	overflow hidden
+	box-sizing border-box
+	justify-content center
+	padding-right 150px
+	max-width 100%
+	width 350px
+	height 85px
+	border-radius 10px
+	background white
+	box-shadow 0 10px 27px 1px rgba(51, 51, 102, .5)
+
+
+	&__title {
+		color $color-denim-blue
+		font-weight 600
+		font-size 22px
+		font-family "Open Sans", sans-serif
+	}
+
+	&__icon {
+		position absolute
+		right -90px
+	}
+}
+
+.card-innovative {
+	position relative
+	box-sizing border-box
+	padding 70px 40px 40px
+	width 290px
+	border-radius 5px
+	background white
+	box-shadow 0 6px 7px 1px rgba(168, 168, 168, .3)
+
+	&__pr {
+		position absolute
+		top -52.5px
+		left 50%
+		display block
+		overflow hidden
+		margin-left -52.5px
+		width 115px
+		height auto
+		border-radius 50%
+
+	}
+
+	&__text {
+		font-weight 300
+		font-size 18px
+	}
+
+	&__title {
+		padding-left 20px
+		color $color-marengo
+
+		&:nth-child(2) {
+			padding-left 5px
+		}
+	}
+
+	&__desc {
+		padding-left 20px
+		color $color-gray-blue
+	}
+}
+
+.card-course {
+	box-sizing border-box
+	padding 20px
+	min-width 250px
+	min-height 250px
+	border-radius 10px
+	box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
+	font-size 22px
+	font-family "Open Sans", sans-serif
+}
+
+.card-book {
+	box-sizing border-box
+	padding 20px
+	min-height 285px
+	max-width 300px
+	border-radius 10px
+	box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
+	font-size 22px
+	font-family "Open Sans", sans-serif
+
+	&__desc {
+		font-size 20px
+	}
+}
+
+.card-training {
+	display flex
+	justify-content space-between
+	align-items center
+	overflow hidden
+	min-height 78px
+	max-width 100%
+	width 475px
+	border-radius 10px
+	box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
+
+	&__desc {
+		margin 0 auto
+		text-align center
+	}
+
+	&__budge {
+		margin 0 auto 5px
+		padding 3px
+		width 175px
+		border-radius 10px
+		font-weight 600
+		font-size 12px
+		font-family "Open Sans", sans-serif
+		text-transform uppercase
+
+		&_theme {
+			&_gold {
+				background $color-yandex
+				color $color-gray-blue
+			}
+			&_white {
+				background white
+				color $color-indigo-creole
+			}
+		}
+	}
+
+	&__title {
+		font-size 22px
+		font-family "Open Sans", sans-serif
+	}
+
+	&__icon {
+		margin-right -5px
+	}
+}

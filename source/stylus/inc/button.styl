@@ -8,11 +8,10 @@
 	background-clip padding-box
 	text-align center
 	transition color, background, box-shadow .3s
+	user-select none
 
 
 	&:focus {
-		outline none
-		border-style dashed
 	}
 
 	&:hover {
@@ -55,7 +54,9 @@
 
 		&_border-tomato {
 			border-color $color-tomato
+			background-color white
 			color $color-cinnabar
+
 
 			&:hover {
 				border-color $color-tomato

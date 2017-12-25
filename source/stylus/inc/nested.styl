@@ -1,0 +1,144 @@
+.nested-main {
+	display flex
+	flex-direction column
+	align-items flex-end
+
+	&__item {
+		display flex
+		flex-direction column
+		align-items flex-end
+		margin-top -30px
+		padding-right 55px
+	}
+}
+
+.nested-innovative {
+	display flex
+	flex-direction row-reverse
+	align-items flex-start
+
+	&__item {
+		&:nth-child(2) {
+			margin-top 85px
+			margin-right -185px
+		}
+
+		&:nth-child(3) {
+			margin-top 170px
+			margin-right -185px
+		}
+	}
+}
+
+.nested-course {
+	display flex
+	justify-content flex-end
+
+	&__item {
+		&:nth-child(1) {
+			position relative
+			z-index 2
+			margin-top 80px
+			margin-right -80px
+		}
+	}
+}
+
+.nested-book {
+	display flex
+	justify-content flex-end
+
+	&__item {
+		&:nth-child(1) {
+			position relative
+			z-index 2
+			margin-top 85px
+			margin-right -140px
+		}
+	}
+}
+
+.nested-gameplay {
+	display flex
+	justify-content flex-end
+
+	&__item {
+		&:nth-child(1) {
+			position relative
+			z-index 3
+			margin-top 100px
+			margin-right -140px
+		}
+
+		&:nth-child(2) {
+			position relative
+			z-index 2
+			margin-top 50px
+			margin-right -140px
+		}
+	}
+}
+
+.nested-training {
+	display flex
+	justify-content flex-end
+
+	&__item {
+		display flex
+		flex-direction column
+		align-items flex-end
+		margin-top -16px
+		margin-left auto
+		padding-right 25px
+
+		&:nth-child(1) {
+			padding-right 0
+		}
+	}
+}
+
+.nested-form {
+	margin 0 auto
+	padding 40px 0
+	max-width 100%
+	width 1075px
+	border-radius 15px
+	background-color white
+	box-shadow 0 28px 36px 2px rgba(26, 28, 103, .2)
+	font-size 0
+
+	&__column {
+		display inline-block
+		box-sizing border-box
+		padding 0 35px 35px
+		width 33.333%
+	}
+
+	&__row {
+		color $color-wet-asphalt
+		font-size 15px
+	}
+}
+
+.nested-social {
+	display flex
+	margin 0
+	padding 0
+	list-style-type none
+
+	&__item {
+		margin-right 30px
+	}
+
+	&__link {
+		display block
+
+		&:hover {
+			opacity .7
+		}
+	}
+
+	&__icon {
+		display block
+	}
+}

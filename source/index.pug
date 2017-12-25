@@ -21,7 +21,7 @@ html(lang="ru")
 					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#") Авторизация / регистрация
 						
 		section.section-main.section.paper-royal-blue
-			.section__container
+			.section__container.section-main__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-30 Онлайн-школа
 						br
@@ -31,6 +31,22 @@ html(lang="ru")
 						| углубляй свои знания, не выходя из дома
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
 				.section__column.section__column_pr
+					.nested-main
+						.card-main
+							.card-main__title Учебник
+							img.card-main__icon(src="images/main-1.svg" width="250" heihgt="250" alt="Учебник")
+						.nested-main__item
+							.card-main
+								.card-main__title Призы
+								img.card-main__icon(src="images/main-2.svg" width="250" heihgt="250" alt="Призы")
+							.nested-main__item
+								.card-main
+									.card-main__title Тренировки
+									img.card-main__icon(src="images/main-3.svg" width="250" heihgt="250" alt="Тренировки")
+								.nested-main__item
+									.card-main
+										.card-main__title Курсы
+										img.card-main__icon(src="images/main-4.svg" width="250" heihgt="250" alt="Курсы")
 
 		section.section-innovative.section.paper-verdepechat
 			.section__container.section-innovative__container
@@ -47,7 +63,47 @@ html(lang="ru")
 						| а результат экзамена возрастает в среднем в 2 раза!
 					a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
 				.section__column.section__column_pr
-
+					.nested-innovative
+						.nested-innovative__item
+							.card-innovative
+								img.card-innovative__pr(src="images/innovative-1.jpg" width="115" height="115" role="presentation")
+								.card-innovative__text
+									.card-innovative__title.offset-b-15 До нашего сервиса
+									.card-innovative__desc.offset-b-25
+										| 3 по русскому
+										br
+										| 15 баллов ОГЭ
+									.card-innovative__title.offset-b-15.offset-l--15 После нашего сервиса
+									.card-innovative__desc
+										| 4 по русскому
+										br
+										| 30 баллов ОГЭ
+						.nested-innovative__item
+							.card-innovative
+								img.card-innovative__pr(src="images/innovative-2.jpg" width="115" height="115" role="presentation")
+								.card-innovative__text
+									.card-innovative__title.offset-b-15 До нашего сервиса
+									.card-innovative__desc.offset-b-25
+										| Проблемы с 
+										br
+										| правописанием
+									.card-innovative__title.offset-b-15.offset-l--15 После нашего сервиса
+									.card-innovative__desc 
+										| Грамотный человек
+						.nested-innovative__item
+							.card-innovative
+								img.card-innovative__pr(src="images/innovative-3.jpg" width="115" height="115" role="presentation")
+								.card-innovative__text
+									.card-innovative__title.offset-b-15 До нашего сервиса
+									.card-innovative__desc.offset-b-25
+										| 2 по русскому
+										br
+										| 15 баллов ЕГЭ
+									.card-innovative__title.offset-b-15.offset-l--15 После нашего сервиса
+									.card-innovative__desc 
+										| 3 по русскому
+										br
+										| 45 баллов ЕГЭ
 		section.section-training.section
 			.section__container.section-training__container
 				.section__column.section__column_desc
@@ -62,7 +118,43 @@ html(lang="ru")
 						| форме
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section__column.section__column_pr
-		
+					.nested-training
+						.nested-training__item
+							.card-training.paper-indigo-creole
+								.card-training__desc
+									.card-training__budge.card-training__budge_theme_gold  Президентский статус
+									.card-training__title YouTube-орфография
+								img.card-training__icon(src="images/training-1.png" width="159" height="79" role="presentation")
+							.nested-training__item
+								.card-training.paper-indigo-creole
+									.card-training__desc
+										.card-training__budge.card-training__budge_theme_gold Президентский статус
+										.card-training__title ВК-орфография
+									img.card-training__icon(src="images/training-2.png" width="159" height="79" role="presentation")
+								.nested-training__item
+									.card-training.paper-indigo-creole
+										.card-training__desc
+											.card-training__budge.card-training__budge_theme_white БЕСПЛАТНО
+											.card-training__title ЕГЭ-тренажёр
+										img.card-training__icon(src="images/training-3.png" width="159" height="79" role="presentation")
+									.nested-training__item
+										.card-training.paper-indigo-creole
+											.card-training__desc
+												.card-training__budge.card-training__budge_theme_white БЕСПЛАТНО
+												.card-training__title ОГЭ-тренажёр
+											img.card-training__icon(src="images/training-4.png" width="159" height="79" role="presentation")
+										.nested-training__item
+											.card-training.paper-indigo-creole
+												.card-training__desc
+													.card-training__budge.card-training__budge_theme_white БЕСПЛАТНО
+													.card-training__title Пунктуация
+												img.card-training__icon(src="images/training-5.png" width="159" height="79" role="presentation")
+											.nested-training__item
+												.card-training.paper-indigo-creole
+													.card-training__desc
+														.card-training__budge.card-training__budge_theme_white БЕСПЛАТНО
+														.card-training__title Орфография
+													img.card-training__icon(src="images/training-6.png" width="159" height="79" role="presentation")
 		section.section-course.section.paper-coral
 			.section__container.section-course__container
 				.section__column.section__column_desc
@@ -77,9 +169,29 @@ html(lang="ru")
 						| ответить на твой вопрос
 					a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
 				.section__column.section__column_pr
-		
+					.nested-course
+						.nested-course__item
+							.card-course.paper-indigo-creole
+								.card-course__title.text-center.offset-b-40 Курс подготовки
+									br
+									| к ЕГЭ по русскому
+								.card-course__desc.text-right 20 занятий
+									br
+									| воскресенье
+									br
+									| 17:00
+						.nested-course__item
+							.card-course.paper-indigo-creole
+								.card-course__title.text-center.offset-b-40 Курс подготовки
+									br
+									| к ОГЭ по русскому
+								.card-course__desc.text-right 20 занятий
+									br
+									| воскресенье
+									br
+									| 14:00
 		section.section-book.section
-			.section__container.section-training__container
+			.section__container.section-book__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-40.color-marengo Изучай учебник,
 						br
@@ -94,9 +206,21 @@ html(lang="ru")
 						| Он всегда под твоей рукой!
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section__column.section__column_pr
-		
+					.nested-book
+						.nested-book__item
+							.card-book.paper-indigo-creole
+								.card-book__title.text-center.offset-b-25 Лев Успенский 
+									br
+									| об имени 
+									br
+									| существительном
+								.card-book__desc «На вопрос «кто?» или «что?» отвечают те слова, которыми люди обозначают всё то, что они могут увидеть, услышать, потрогать, или даже...»
+						.nested-book__item
+							.card-book.paper-indigo-creole
+								.card-book__title.text-center.offset-b-40 Имя существительное
+								.card-book__desc В русском языке есть большая группа слов, которые отвечают на вопросы «кто?» «что?». Они называются именами существительными.
 		section.section-gameplay.section.paper-orange-pink
-			.section__container.section-training__container
+			.section__container.section-gameplay__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-50.color-wet-asphalt Всё это —
 						br
@@ -107,28 +231,35 @@ html(lang="ru")
 						| задания от матрёшки Мани. Легко и просто!
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
 				.section__column.section__column_pr
+					.nested-gameplay
+						.nested-gameplay__item
+							img(src="images/gameplay-red.svg" width="225" height="350" role="presentation")
+						.nested-gameplay__item
+							img(src="images/gameplay-orange.svg" width="225" height="350" role="presentation")
+						.nested-gameplay__item
+							img(src="images/gameplay-blue.svg" width="225" height="350" role="presentation")
 		
 		section.section-teacher.section.paper-somon
-			.section__container.section-training__container
-				.section__column.section__column_desc
+			.section__container.section-teacher__container
+				.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
 					h3.h3.offset-b-30 Преподаватель курса 
 						br
 						| ОГЭ по русскому языку
 					h4.h4.offset-b-30 Хасаншин Азат Нафисович
-					p.slogan.offset-b-10 — Основатель, генеральный директор,
+					p.slogan — Основатель, генеральный директор,
 						br
 						| онлайн-школы «Как Правильно»
-					p.slogan.offset-b-10 — Победитель всероссийских олимпиад
+					p.slogan — Победитель всероссийских олимпиад
 						br
 						| и конференций по русскому языку
-					p.slogan.offset-b-10 — Автор научно-исследовательских работ
-					p.slogan.offset-b-10 — Отличник
+					p.slogan — Автор научно-исследовательских работ
+					p.slogan — Отличник
 					p.slogan.offset-b-40 — Кандидат в мастера спорта по спортивной
 						br
 						| борьбе
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
-				.section__column.section__column_pr
-		
+				.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr
+					img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович")
 		section.section-cost.section.paper-denim-blue
 			.section__container.section-training__container
 				.section__column.section__column_desc
@@ -141,3 +272,60 @@ html(lang="ru")
 						br
 						| Первое занятие бесплатно
 					a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+				.section__column.section__column_pr
+					.nested-training
+						.nested-training__item
+							.card-training.paper-indigo-creole
+								.card-training__desc
+									.card-training__budge.card-training__budge_theme_gold  Президентский статус
+									.card-training__title YouTube-орфография
+								img.card-training__icon(src="images/training-1.png" width="159" height="79" role="presentation")
+							.nested-training__item
+								.card-training.paper-indigo-creole
+									.card-training__desc
+										.card-training__budge.card-training__budge_theme_gold Президентский статус
+										.card-training__title ВК-орфография
+									img.card-training__icon(src="images/training-2.png" width="159" height="79" role="presentation")
+								.nested-training__item
+									.card-training.paper-indigo-creole
+										.card-training__desc
+											.card-training__budge.card-training__budge_theme_gold БЕСПЛАТНО
+											.card-training__title 20 занятий курса ОГЭ или ЕГЭ
+											
+		section.section-register.section.paper-medium-magenta.text-center
+			.section__container.section-register__container
+				h2.h1.offset-b-40 Зарегистрируйся и получи 
+					br
+					| бесплатное первое занятие
+				form()
+					.section-register__form.nested-form
+						.nested-form__column: input.field.field_available(placeholder="Класс обучения")
+						.nested-form__column: input.field.field_available(placeholder="Желаемый курс")
+						.nested-form__column: input.field.field_available(placeholder="Телефон")
+						.nested-form__column: input.field.field_available(placeholder="Ваши ФИО")
+						.nested-form__column: input.field.field_available(placeholder="Электронная почта")
+						.nested-form__column: input.field.field_available(placeholder="Пароль")
+						.nested-form__row
+							input.field-checkbox.offset-r-10(type="checkbox" required)
+							| Принимаю условия 
+							a.link(href="#") пользовательского соглашения
+							|  и 
+							a.link(href="#") политики обработки персональных данных
+					button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(href="#") Начать обучение
+		footer.section-foo.section.paper-black-brown
+			.section__container.section-foo__container
+				.section-foo__column.section-foo__column_social
+					.offset-b-50: ul.nested-social
+						li.nested-social__item: a.nested-social__link(href="#"): img.nested-social__icon(src="images/vk.svg" width="52" height="52" alt="vkontakte")
+						li.nested-social__item: a.nested-social__link(href="#"): img.nested-social__icon(src="images/fb.svg" width="52" height="52" alt="facebook")
+						li.nested-social__item: a.nested-social__link(href="#"): img.nested-social__icon(src="images/in.svg" width="52" height="52" alt="instagram")
+					.section-foo__copy © ООО «Как Правильно», 2016–2017
+				.section-foo__column.section-foo__column_market
+					a(href="#"): img.section-foo__market.offset-b-25(src="images/google-play-market.svg" width="159" height="47" alt="google play market")
+					a(href="#"): img.section-foo__market(src="images/app-store.svg" width="158" height="53" alt="app store")
+				.section-foo__column.section-foo__column_info
+					.offset-b-35: a.section-foo__link.color-white-aluminum(href="#") Обратная связь
+					.offset-b-35: a.section-foo__link.color-white-aluminum(href="#") Пользовательское соглашение
+					| Сделано с 
+					img.icon-heart(src="images/heart.png" width="16" height="16" alt="любовью")
+					|  в Татарстане
