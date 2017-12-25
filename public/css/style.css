@@ -923,7 +923,12 @@
   height: auto;
 }
 .section-cost {
-  padding: 140px 0 80px;
+  padding: 40px 0;
+}
+@media (min-width: 992px) {
+  .section-cost {
+    padding: 140px 0 80px;
+  }
 }
 .section-register {
   padding: 90px 0 60px;
