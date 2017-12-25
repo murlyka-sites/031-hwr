@@ -101,6 +101,9 @@
 .offset-b-110 {
   margin-bottom: 100px;
 }
+.offset-b-130 {
+  margin-bottom: 130px;
+}
 .button {
   display: inline-block;
   box-sizing: border-box;
@@ -227,5 +230,9 @@
 }
 .section-teacher {
   padding: 80px 0;
+  color: #fff;
+}
+.section-cost {
+  padding: 140px 0 80px;
   color: #fff;
 }
