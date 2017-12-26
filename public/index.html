@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
 		<link rel="stylesheet" href="selectric/selectric.css">
-		<link rel="stylesheet" href="css/style.css?ts=1514294197473">
+		<link rel="stylesheet" href="css/style.css?ts=1514295112830">
 	</head>
 	<body class="page" data-aos-once>
 		<div class="section-header section">
@@ -175,10 +175,10 @@
 							<input class="field field_available" placeholder="Пароль">
 						</div>
 						<div class="nested-form__row">
-							<input class="field-checkbox offset-r-10" type="checkbox" required>Принимаю условия <a class="link" href="#legal" data-fancybox>пользовательского соглашения</a> и <a class="link" href="#policy" data-fancybox>политики обработки персональных данных</a>
+							<input class="field-checkbox offset-r-10" type="checkbox" required data-toggle-disabled="#submit-1">Принимаю условия <a class="link" href="#legal" data-fancybox>пользовательского соглашения</a> и <a class="link" href="#policy" data-fancybox>политики обработки персональных данных</a>
 						</div>
 					</div>
-					<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral" href="#">Начать обучение</button>
+					<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral button_disabled" id="submit-1" type="submit" disabled>Начать обучение</button>
 				</form>
 			</div>
 		</section>
@@ -692,11 +692,11 @@
 							<input class="field field_available" type="password" placeholder="Повторить пароль">
 						</div>
 						<div class="nested-popup-form__politic">
-							<input class="field-checkbox offset-r-10" id="check-politic-1" type="checkbox" required><span>
+							<input class="field-checkbox offset-r-10" id="check-politic-1" type="checkbox" required data-toggle-disabled="#submit-2"><span>
 								<label for="check-politic-1">Принимаю условия </label><a class="link" href="#legal" data-fancybox>пользовательского соглашения</a> и <a class="link" href="#policy" data-fancybox>политики обработки персональных данных</a></span>
 						</div>
 						<div class="nested-popup-form__submit text-center">
-							<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral" type="submit">Зарегистрироваться</button>
+							<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral button_disabled" id="submit-2" type="submit" disabled>Зарегистрироваться</button>
 						</div>
 					</form>
 				</div>

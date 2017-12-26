@@ -210,12 +210,12 @@ html(lang="ru")
 						.nested-form__column: input.field.field_available(placeholder="Электронная почта")
 						.nested-form__column: input.field.field_available(placeholder="Пароль")
 						.nested-form__row
-							input.field-checkbox.offset-r-10(type="checkbox" required)
+							input.field-checkbox.offset-r-10(type="checkbox" required data-toggle-disabled="#submit-1")
 							| Принимаю условия 
 							a.link(href="#legal" data-fancybox) пользовательского соглашения
 							|  и 
 							a.link(href="#policy" data-fancybox) политики обработки персональных данных
-					button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(href="#") Начать обучение
+					button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral.button_disabled#submit-1(type="submit" disabled) Начать обучение
 		footer.section-foo.section.paper-black-brown
 			.section__container.section-foo__container
 				.section-foo__column.section-foo__column_social
@@ -261,14 +261,14 @@ html(lang="ru")
 						.nested-popup-form__field: input.field.field_available(type="password" placeholder="Пароль")
 						.nested-popup-form__field: input.field.field_available(type="password" placeholder="Повторить пароль")
 						.nested-popup-form__politic
-							input.field-checkbox.offset-r-10#check-politic-1(type="checkbox" required )
+							input.field-checkbox.offset-r-10#check-politic-1(type="checkbox" required data-toggle-disabled="#submit-2")
 							span
 								label(for="check-politic-1") Принимаю условия 
 								a.link(href="#legal" data-fancybox) пользовательского соглашения
 								|  и 
 								a.link(href="#policy" data-fancybox) политики обработки персональных данных
 						.nested-popup-form__submit.text-center
-							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(type="submit") Зарегистрироваться
+							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral.button_disabled#submit-2(type="submit" disabled) Зарегистрироваться
 			.popup-auth#auth
 				header.popup-auth__header
 					ul.pupup-auth__nav.nested-nav-auth

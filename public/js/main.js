@@ -20,6 +20,19 @@ $('[data-to-popup]').click(function () {
 
 svg4everybody();
 $('select').selectric();
+
+$("[data-toggle-disabled]").change(function() {
+	let $btn = $($(this).data("toggle-disabled"))
+
+	if($(this).prop("checked")) {
+		$btn.prop("disabled", false);
+		$btn.removeClass("button_disabled");
+	} else {
+		$btn.prop("disabled", true);
+		$btn.addClass("button_disabled");
+	}
+});
+
 });
 
 window.addEventListener("load", function () {
