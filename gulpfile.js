@@ -10,6 +10,8 @@ const plumber = require('gulp-plumber');
 const less = require('gulp-less');
 const stylus = require('gulp-stylus');
 const imagemin = require('gulp-imagemin');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 
 	imagemin.mozjpeg = require('imagemin-mozjpeg');
 	imagemin.pngquant = require('imagemin-pngquant');
@@ -36,6 +38,7 @@ function taskStylus() {
 	return gulp.src('./source/stylus/*.styl')
 		.pipe(plumber())
 		.pipe(stylus())
+		.pipe(postcss([ autoprefixer() ]))
 		.pipe(gulp.dest('./public/css/'));
 }
 
