@@ -34,7 +34,7 @@ html(lang="ru")
 						br.hidden.visible-md
 						| углубляй свои знания, не выходя из дома
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-innovate" data-scroll) Подробная информация
 				.section__column.section__column_pr
 					.section-main__nested: .nested-main
 						img.nested-main__item(src="images/main-1.svg" width="350" heihgt="85")
@@ -71,7 +71,7 @@ html(lang="ru")
 						| увлекательных
 						br
 						| тренажёрах
-					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
+					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="https://youtu.be/ExF_yP4s46Y" data-fancybox) Как это работает?
 					p.slogan.offset-b-40.color-gray-blue Прокачивай свой русский в игровой форме
 					.hidden.visible-md
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-course" data-scroll) Дальше
@@ -89,7 +89,7 @@ html(lang="ru")
 					h2.h2.offset-b-30 Готовься к ОГЭ и ЕГЭ 
 						br
 						| на наших курсах
-					a.button.button_type_link.button_theme_border-white-tomato.button_size_md.offset-b-40(href="#") Как это работает?
+					a.button.button_type_link.button_theme_border-white-tomato.button_size_md.offset-b-40(href="https://youtu.be/ExF_yP4s46Y" data-fancybox) Как это работает?
 					p.slogan.offset-b-30 Занятия проходят на нашем сайте в режиме 
 						br.hidden.visible-md
 						| реального времени. Преподаватель всегда готов 
@@ -109,7 +109,7 @@ html(lang="ru")
 						| написанный
 						br.hidden.visible-md
 						| простым языком
-					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
+					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="https://youtu.be/ExF_yP4s46Y" data-fancybox) Как это работает?
 					p.slogan.offset-b-40.color-gray-blue Мы первыми сделали по-настоящему понятный, 
 						br.hidden.visible-md
 						| полезный и исчерпывающий учебник. 
@@ -127,7 +127,7 @@ html(lang="ru")
 					h2.h2.offset-b-50.color-wet-asphalt Всё это —
 						br
 						| в игровой форме!
-					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
+					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="https://youtu.be/ExF_yP4s46Y" data-fancybox) Как это работает?
 					p.slogan.offset-b-30.color-gray-blue.color-wet-asphalt Развивайся семимильными шагами, выполняя 
 						br.hidden.visible-md
 						| задания от матрёшки Мани. Легко и просто!
@@ -198,9 +198,9 @@ html(lang="ru")
 						.nested-form__row
 							input.field-checkbox.offset-r-10(type="checkbox" required)
 							| Принимаю условия 
-							a.link(href="#") пользовательского соглашения
+							a.link(href="#legal" data-fancybox) пользовательского соглашения
 							|  и 
-							a.link(href="#") политики обработки персональных данных
+							a.link(href="#policy" data-fancybox) политики обработки персональных данных
 					button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(href="#") Начать обучение
 		footer.section-foo.section.paper-black-brown
 			.section__container.section-foo__container
@@ -217,13 +217,15 @@ html(lang="ru")
 					a(href="#"): img.section-foo__market(src="images/app-store.svg" width="158" height="53" alt="app store")
 				.section-foo__column.section-foo__column_info
 					.section-foo__gutter: a.section-foo__link.color-white-aluminum(href="#") Обратная связь
-					.section-foo__gutter: a.section-foo__link.color-white-aluminum(href="#politic" data-fancybox) Пользовательское соглашение
+					.section-foo__gutter: a.section-foo__link.color-white-aluminum(href="#legal" data-fancybox) Пользовательское соглашение
 					| Сделано с 
 					img.icon-heart(src="images/heart.png" width="16" height="16" alt="любовью")
 					|  в Татарстане
 		div(hidden)
-			.popup-politic#politic
-				include politic.html
+			.popup-legal#legal
+				include legal.html
+			.popup-policy#policy
+				include policy.html
 			.popup-auth#reg
 				header.popup-auth__header
 					ul.pupup-auth__nav.nested-nav-auth
@@ -246,9 +248,9 @@ html(lang="ru")
 							input.field-checkbox.offset-r-10#check-politic-1(type="checkbox" required )
 							span
 								label(for="check-politic-1") Принимаю условия 
-								a.link(href="#") пользовательского соглашения
+								a.link(href="#legal" data-fancybox) пользовательского соглашения
 								|  и 
-								a.link(href="#") политики обработки персональных данных
+								a.link(href="#policy" data-fancybox) политики обработки персональных данных
 						.nested-popup-form__submit.text-center
 							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(type="submit") Зарегистрироваться
 			.popup-auth#auth

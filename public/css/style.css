@@ -752,7 +752,8 @@
   margin-bottom: 20px;
   padding-top: 8px;
 }
-.popup-politic {
+.popup-policy,
+.popup-legal {
   max-width: 875px;
 }
 .popup-auth {
