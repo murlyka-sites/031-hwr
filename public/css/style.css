@@ -17,7 +17,6 @@
   font-style: normal;
 }
 .section {
-  overflow: hidden;
   color: #fff;
 }
 .section__container {
@@ -26,6 +25,7 @@
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
+  overflow: hidden;
 }
 .paper-royal-blue {
   background: #4059f6 linear-gradient(28deg, #1c368e 0, #4059f6 100%);
@@ -533,7 +533,7 @@
 }
 .nested-main__item {
   position: relative;
-  margin-top: -5%;
+  margin-top: -15px;
   width: 70%;
   height: auto;
   border-radius: 10px;
@@ -546,6 +546,7 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    margin-top: -25px;
     padding-left: 0;
   }
 }
@@ -586,11 +587,21 @@
 }
 .nested-innovative__item:nth-child(2) {
   left: -22%;
-  margin-top: -45%;
+  margin-top: -120px;
+}
+@media (min-width: 480px) {
+  .nested-innovative__item:nth-child(2) {
+    margin-top: -200px;
+  }
 }
 .nested-innovative__item:nth-child(3) {
   left: -44%;
-  margin-top: -45%;
+  margin-top: -80px;
+}
+@media (min-width: 480px) {
+  .nested-innovative__item:nth-child(3) {
+    margin-top: -200px;
+  }
 }
 .nested-training {
   display: -webkit-box;
@@ -614,7 +625,7 @@
 .nested-training__item {
   position: relative;
   display: block;
-  margin-top: -2.5%;
+  margin-top: -25px;
   width: 80%;
   height: auto;
   border-radius: 10px;
@@ -666,7 +677,7 @@
 }
 .nested-course__item:nth-child(2) {
   left: -40%;
-  margin-top: -40%;
+  margin-top: -150px;
 }
 .nested-book {
   display: -webkit-box;
@@ -698,7 +709,7 @@
 }
 .nested-book__item:nth-child(2) {
   left: -35%;
-  margin-top: -43%;
+  margin-top: -160px;
 }
 .nested-gameplay {
   display: -webkit-box;

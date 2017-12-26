@@ -12,6 +12,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic")
 		- let ts = +Date.now();
 		link(rel="stylesheet", href="css/style.css?ts=" + ts)
+		
 	body.page
 		.section-header.section
 			.section__container.section-header__container
@@ -36,11 +37,11 @@ html(lang="ru")
 					.hidden.visible-md(data-aos="fade" data-aos-delay="300")
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-innovate" data-scroll) Подробная информация
 				.section__column.section__column_pr
-					.section-main__nested: .nested-main
-						img.nested-main__item(src="images/main-1.svg" width="350" heihgt="85" data-aos="fade-left")
-						img.nested-main__item(src="images/main-2.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="200")
-						img.nested-main__item(src="images/main-3.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="400")
-						img.nested-main__item(src="images/main-4.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="600")
+					.section-main__nested: .nested-main(data-aos)
+						img.nested-main__item(src="images/main-1.svg" width="350" heihgt="85" data-aos="fade-left" data-svg-fallback)
+						img.nested-main__item(src="images/main-2.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="200" data-svg-fallback)
+						img.nested-main__item(src="images/main-3.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="400" data-svg-fallback)
+						img.nested-main__item(src="images/main-4.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="600" data-svg-fallback)
 					.visible.hidden-md
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
 		section.section-innovative.section.paper-verdepechat#section-innovative
@@ -60,9 +61,9 @@ html(lang="ru")
 						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#section-training" data-scroll) Дальше
 				.section-innovative__column.section-innovative__column_pr
 					.nested-innovative
-						img.nested-innovative__item(src="images/inno-3.png" width="280" height="330" data-aos="fade-left" data-aos-delay="0")
-						img.nested-innovative__item(src="images/inno-2.png" width="280" height="330" data-aos="fade-left" data-aos-delay="150")
-						img.nested-innovative__item(src="images/inno-1.png" width="280" height="330" data-aos="fade-left" data-aos-delay="300")
+						img.nested-innovative__item(src="images/inno-3.png" width="280" height="330" data-aos="fade-left" data-aos-delay="0" data-svg-fallback)
+						img.nested-innovative__item(src="images/inno-2.png" width="280" height="330" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
+						img.nested-innovative__item(src="images/inno-1.png" width="280" height="330" data-aos="fade-left" data-aos-delay="300" data-svg-fallback)
 		section.section-training.section#section-training
 			.section__container.section-training__container
 				.section__column.section__column_desc
@@ -77,12 +78,12 @@ html(lang="ru")
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-course" data-scroll data-aos="fade" data-aos-delay="450") Дальше
 				.section__column.section__column_pr
 					.nested-training
-						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="")
-						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="150")
-						img.nested-training__item(src="images/training-3.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="300")
-						img.nested-training__item(src="images/training-4.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="450")
-						img.nested-training__item(src="images/training-5.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="600")
-						img.nested-training__item(src="images/training-6.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="750")
+						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="" data-svg-fallback)
+						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
+						img.nested-training__item(src="images/training-3.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="300" data-svg-fallback)
+						img.nested-training__item(src="images/training-4.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="450" data-svg-fallback)
+						img.nested-training__item(src="images/training-5.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="600" data-svg-fallback)
+						img.nested-training__item(src="images/training-6.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="750" data-svg-fallback)
 		section.section-course.section.paper-coral#section-course
 			.section__container.section-course__container
 				.section__column.section__column_desc
@@ -99,8 +100,8 @@ html(lang="ru")
 						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#section-book" data-scroll) Дальше
 				.section__column.section__column_pr
 					.section-course__nested: .nested-course
-						img.nested-course__item(width="250" height="250" src="images/course-1.svg" data-aos="fade-left" data-aos-delay="")
-						img.nested-course__item(width="250" height="250" src="images/course-2.svg" data-aos="fade" data-aos-delay="150")
+						img.nested-course__item(width="250" height="250" src="images/course-1.svg" data-aos="fade-left" data-aos-delay="" data-svg-fallback)
+						img.nested-course__item(width="250" height="250" src="images/course-2.svg" data-aos="fade" data-aos-delay="150" data-svg-fallback)
 		section.section-book.section#section-book
 			.section__container.section-book__container
 				.section-book__column.section-book__column_desc
@@ -119,8 +120,8 @@ html(lang="ru")
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-gameplay" data-scroll data-aos="fade" data-aos-delay="450") Дальше
 				.section-book__column.section-book__column_pr
 					.section-book__nested: .nested-book
-						img.nested-book__item(width="300" height="301" src="images/book-1.svg" data-aos="fade-left")
-						img.nested-book__item(width="300" height="301" src="images/book-2.svg" data-aos="fade-left" data-aos-delay="150")
+						img.nested-book__item(width="300" height="301" src="images/book-1.svg" data-aos="fade-left" data-svg-fallback)
+						img.nested-book__item(width="300" height="301" src="images/book-2.svg" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
 		section.section-gameplay.section.paper-orange-pink#section-gameplay
 			.section__container.section-gameplay__container
 				.section__column.section__column_desc
@@ -136,11 +137,11 @@ html(lang="ru")
 				.section__column.section__column_pr
 					.nested-gameplay
 						.nested-gameplay__item
-							img.section-gameplay__pr(src="images/gameplay-red.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="300")
+							img.section-gameplay__pr(src="images/gameplay-red.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="300" data-svg-fallback)
 						.nested-gameplay__item
-							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="150")
+							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
 						.nested-gameplay__item
-							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="0")
+							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="0" data-svg-fallback)
 		section.section-teacher.section.paper-somon#section-teacher
 			.section__container.section-teacher__container
 				.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
@@ -178,9 +179,9 @@ html(lang="ru")
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-register" data-scroll data-aos="fade" data-aos-delay="450") Дальше
 				.section__column.section__column_pr
 					.section-cost__nested: .nested-training.nested-training-2
-						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="200")
-						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="400")
-						img.nested-training__item(src="images/training-7.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="600")
+						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="200" data-svg-fallback)
+						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="400" data-svg-fallback)
+						img.nested-training__item(src="images/training-7.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="600" data-svg-fallback)
 											
 		section.section-register.section.paper-medium-magenta.text-center#section-register
 			.section__container.section-register__container
@@ -266,8 +267,19 @@ html(lang="ru")
 							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(type="submit") Войти
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script.
+			isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+			if(isIE11) {
+				$("[data-svg-fallback]").each(function() {
+					let src = $(this).attr('src').replace('.svg', '.png');
+				
+					$(this).attr('src', src);
+				
+				});
+			}
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js")
 		script(src="js/main.js")

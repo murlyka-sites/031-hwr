@@ -18,3 +18,12 @@ $('[data-to-popup]').click(function () {
 })
 
 AOS.init();
+
+svg4everybody();
+// 
+// $("[data-svg-fallback]").each(function() {
+// 	let src = $(this).attr('src').replace('.svg', '.png');
+//
+// 	$(this).attr('src', src);
+//
+// });
