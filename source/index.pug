@@ -18,7 +18,11 @@ html(lang="ru")
 				.section-header__column.section-header__column_logo
 					a(href="#"): img.section-header__logo(src="images/logo-white.svg" width="241" height="38" alt="Логотип: Как правильно")
 				.section-header__column.section-header__column_auth
-					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#reg" data-fancybox) Вход / Регистрация
+					.hidden-sm
+						a(href="#reg" data-fancybox)
+							img(src="images/auth.svg" width="35" height="30" alt="Войти")
+					.hidden.visible-sm
+						a.button.button_size_sm.button_type_link.button_theme_border-white(href="#reg" data-fancybox) Вход / Регистрация
 						
 		section.section-main.section.paper-royal-blue#section-main
 			.section__container.section-main__container

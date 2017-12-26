@@ -827,6 +827,12 @@
 .icon-heart {
   vertical-align: middle;
 }
+.icon-auth {
+  fill: #fff;
+}
+.icon-auth:hover {
+  fill: #e6e6e6;
+}
 .section-header {
   position: absolute;
   top: 0;
@@ -834,25 +840,26 @@
   left: 0;
 }
 .section-header__container {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 15px;
-}
-@media (min-width: 768px) {
-  .section-header__container {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .section-header__column_logo {
   margin-bottom: 10px;
+  max-width: 60%;
 }
 @media (min-width: 768px) {
   .section-header__column_logo {
     margin-bottom: none;
   }
 }
+.section-header__logo {
+  max-width: 100%;
+  height: auto;
+}
 .section-main {
   box-sizing: border-box;
-  padding: 150px 0 40px;
+  padding: 70px 0 40px;
 }
 @media (min-width: 992px) {
   .section-main {

@@ -36,6 +36,14 @@
 	vertical-align middle
 }
 
+.icon-auth {
+	fill white
+
+	&:hover {
+		fill darken(white, 10%)
+	}
+}
+
 .section-header {
 	position absolute
 	top 0
@@ -43,17 +51,15 @@
 	left 0
 
 	&__container {
+		display flex
+		justify-content space-between
 		padding 20px 15px
-
-		@media (min-width $sm) {
-			display flex
-			justify-content space-between
-		}
 	}
 
 	&__column {
 		&_logo {
 			margin-bottom 10px
+			max-width 60%
 
 			@media (min-width $sm) {
 				margin-bottom none
@@ -61,14 +67,17 @@
 		}
 	}
 
-	&__logo {}
+	&__logo {
+		max-width 100%
+		height auto
+	}
 
 	&__button {}
 }
 
 .section-main {
 	box-sizing border-box
-	padding 150px 0 40px
+	padding 70px 0 40px
 
 	@media (min-width $md) {
 		padding 150px 0 100px
