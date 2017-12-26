@@ -10,7 +10,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
-		<link rel="stylesheet" href="css/style.css?ts=1514277893074">
+		<link rel="stylesheet" href="selectric/selectric.css">
+		<link rel="stylesheet" href="css/style.css?ts=1514281215263">
 	</head>
 	<body class="page">
 		<div class="section-header section">
@@ -140,10 +141,22 @@
 				<form>
 					<div class="section-register__form nested-form">
 						<div class="nested-form__column">
-							<input class="field field_available" placeholder="Класс обучения">
+							<select class="field field_available">
+								<option selected disabled>Класс обучения</option>
+								<option>1 Класс</option>
+								<option>2 Класс</option>
+								<option>3 Класс</option>
+								<option>4 Класс</option>
+							</select>
 						</div>
 						<div class="nested-form__column">
-							<input class="field field_available" placeholder="Желаемый курс">
+							<select class="field field_available">
+								<option selected disabled>Желаемый курс</option>
+								<option>1 Курс</option>
+								<option>2 Курс</option>
+								<option>3 Курс</option>
+								<option>4 Курс</option>
+							</select>
 						</div>
 						<div class="nested-form__column">
 							<input class="field field_available" placeholder="Телефон">
@@ -720,6 +733,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+		<script src="selectric/jquery.selectric.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

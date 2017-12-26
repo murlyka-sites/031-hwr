@@ -20,7 +20,8 @@ $('[data-to-popup]').click(function () {
 AOS.init();
 
 svg4everybody();
-// 
+$('select').selectric();
+//
 // $("[data-svg-fallback]").each(function() {
 // 	let src = $(this).attr('src').replace('.svg', '.png');
 //

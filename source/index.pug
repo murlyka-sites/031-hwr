@@ -11,6 +11,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic")
 		- let ts = +Date.now();
+		link(rel="stylesheet" href="selectric/selectric.css")
 		link(rel="stylesheet", href="css/style.css?ts=" + ts)
 		
 	body.page
@@ -190,8 +191,18 @@ html(lang="ru")
 					| бесплатное первое занятие
 				form()
 					.section-register__form.nested-form
-						.nested-form__column: input.field.field_available(placeholder="Класс обучения")
-						.nested-form__column: input.field.field_available(placeholder="Желаемый курс")
+						.nested-form__column: select.field.field_available
+							option(selected disabled) Класс обучения
+							option 1 Класс
+							option 2 Класс
+							option 3 Класс
+							option 4 Класс
+						.nested-form__column: select.field.field_available
+							option(selected disabled) Желаемый курс
+							option 1 Курс
+							option 2 Курс
+							option 3 Курс
+							option 4 Курс
 						.nested-form__column: input.field.field_available(placeholder="Телефон")
 						.nested-form__column: input.field.field_available(placeholder="Ваши ФИО")
 						.nested-form__column: input.field.field_available(placeholder="Электронная почта")
@@ -282,4 +293,6 @@ html(lang="ru")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js")
+		script(src="selectric/jquery.selectric.min.js")
+		
 		script(src="js/main.js")
