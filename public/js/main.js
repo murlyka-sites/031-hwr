@@ -38,7 +38,8 @@ $("[data-toggle-disabled]").change(function() {
 window.addEventListener("load", function () {
 
 	AOS.init({
-		once: true
+		once: true,
+		offset: 0
 	});
 
 });
