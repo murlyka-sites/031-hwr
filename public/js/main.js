@@ -17,7 +17,9 @@ $('[data-to-popup]').click(function () {
 	return false;
 })
 
-AOS.init();
+AOS.init({
+	once: true 
+});
 
 svg4everybody();
 $('select').selectric();
