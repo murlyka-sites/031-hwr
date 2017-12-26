@@ -9,10 +9,12 @@ $('[data-to-popup]').click(function () {
 	$.fancybox.close();
 	$.fancybox.open([
 	{
-		src: $(this).attr('href')		
+		src: $(this).attr('href')
 	}],
 	{
 		autoFocus: false
 	});
 	return false;
 })
+
+AOS.init();
