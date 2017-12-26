@@ -94,7 +94,7 @@
 }
 .h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Proxima Nova", sans-serif;
 }
 @media (min-width: 768px) {
@@ -104,7 +104,7 @@
 }
 .h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Proxima Nova", sans-serif;
 }
 @media (min-width: 768px) {
@@ -139,6 +139,9 @@
 }
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 .text-right {
   text-align: right;
@@ -473,16 +476,18 @@
   fill: #fff;
 }
 .nested-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding-left: 32%;
-  max-width: 100%;
   margin: 0;
+  max-width: 100%;
   width: 516px;
 }
 .nested-main__item {
   position: relative;
-  margin-top: -10%;
-  width: 100%;
+  margin-top: -5%;
+  width: 70%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 10px 27px 1px rgba(51,51,102,0.5);
@@ -498,103 +503,107 @@
   margin-top: 0;
 }
 .nested-main__item:nth-child(2) {
-  left: -15%;
+  left: -10%;
 }
 .nested-main__item:nth-child(3) {
-  left: -30%;
+  left: -20%;
 }
 .nested-main__item:nth-child(4) {
-  left: -45%;
+  left: -30%;
 }
 .nested-innovative {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding-left: 44%;
+  margin: auto;
   max-width: 100%;
   width: 501px;
 }
 .nested-innovative__item {
   position: relative;
   display: block;
-  width: 100%;
+  width: 56%;
   height: auto;
 }
 .nested-innovative__item:nth-child(2) {
-  margin-top: -85%;
-  margin-left: -40%;
+  left: -22%;
+  margin-top: -45%;
 }
 .nested-innovative__item:nth-child(3) {
-  margin-top: -85%;
-  margin-left: -80%;
+  left: -44%;
+  margin-top: -45%;
 }
 .nested-training {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding-left: 31%;
   max-width: 100%;
   width: 600px;
 }
 .nested-training-2 {
-  width: 550px;
-  padding-left: 21%;
+  width: 564px;
 }
 .nested-training__item {
   position: relative;
   display: block;
-  width: 100%;
+  margin-top: -2.5%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 16px 1px rgba(0,0,0,0.21);
-  margin-top: -2.5%;
 }
 .nested-training__item:nth-child(1) {
   margin-top: 0;
 }
 .nested-training__item:nth-child(2) {
-  margin-left: -8.8%;
+  left: -4%;
 }
 .nested-training__item:nth-child(3) {
-  margin-left: -17.6%;
+  left: -8%;
 }
 .nested-training__item:nth-child(4) {
-  margin-left: -26.400000000000002%;
+  left: -12%;
 }
 .nested-training__item:nth-child(5) {
-  margin-left: -35.2%;
+  left: -16%;
 }
 .nested-training__item:nth-child(6) {
-  margin-left: -44%;
+  left: -20%;
 }
 .nested-course {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding-left: 40%;
   max-width: 100%;
   width: 420px;
 }
 .nested-course__item {
   position: relative;
   display: block;
-  width: 100%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 16px 1px rgba(0,0,0,0.21);
-  margin-top: -2.5%;
-}
-.nested-course__item:nth-child(1) {
-  margin-top: 0;
 }
 .nested-course__item:nth-child(2) {
-  margin-top: -66%;
-  margin-left: -66%;
+  left: -40%;
+  margin-top: -40%;
 }
 .nested-book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding-left: 40%;
   max-width: 100%;
   width: 460px;
 }
 .nested-book__item {
   position: relative;
   display: block;
-  width: 100%;
+  width: 65%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 16px 1px rgba(0,0,0,0.21);
@@ -603,8 +612,8 @@
   margin-top: 0;
 }
 .nested-book__item:nth-child(2) {
-  margin-top: -66%;
-  margin-left: -66%;
+  left: -35%;
+  margin-top: -43%;
 }
 .nested-gameplay {
   display: flex;
@@ -663,8 +672,8 @@
 }
 @media (min-width: 992px) {
   .nested-form__column {
-    width: 33.333%;
     padding: 0 20px 35px;
+    width: 33.333%;
   }
 }
 @media (min-width: 1220px) {
@@ -811,9 +820,7 @@
   }
 }
 .section-main__nested {
-  margin: 15px auto;
-  width: 516px;
-  max-width: 100%;
+  margin: 15px auto 25px;
 }
 @media (min-width: 992px) {
   .section-main__nested {
@@ -845,9 +852,9 @@
   min-width: none;
 }
 .section-innovative__nested {
+  margin: auto;
   max-width: 100%;
   width: 501px;
-  margin: auto;
 }
 .section-training {
   padding: 40px 0;
@@ -864,9 +871,9 @@
   }
 }
 .section-training__nested {
+  margin: auto;
   max-width: 100%;
   width: 660px;
-  margin: auto;
 }
 .section-course {
   padding: 40px 0;
@@ -884,9 +891,9 @@
   }
 }
 .section-course__nested {
-  width: 420px;
-  max-width: 100%;
   margin: auto;
+  max-width: 100%;
+  width: 420px;
 }
 @media (min-width: 992px) {
   .section-course__nested {
@@ -917,9 +924,9 @@
   flex: none;
 }
 .section-book__nested {
-  width: 460px;
-  max-width: 100%;
   margin: auto;
+  max-width: 100%;
+  width: 460px;
 }
 .section-gameplay {
   padding: 40px 0;
@@ -991,6 +998,11 @@
   .section-cost {
     padding: 140px 0 80px;
   }
+}
+.section-cost__nested {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 550px;
 }
 .section-register {
   padding: 90px 0 60px;

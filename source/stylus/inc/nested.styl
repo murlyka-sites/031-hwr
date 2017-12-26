@@ -1,26 +1,24 @@
 .nested-main {
+	display flex
+	flex-direction column
+	align-items flex-end
 	box-sizing border-box
-	padding-left 32%
-	max-width 100%
 	margin 0
+	max-width 100%
 	width 516px
-
-	@media (min-width $md) {
-	}
 
 	&__item {
 		position relative
-		margin-top -10%
-		width 100%
+		margin-top -5%
+		width 70%
 		height auto
-
 		border-radius 10px
 		box-shadow 0 10px 27px 1px rgba(51, 51, 102, .5)
 
 		@media (min-width $md) {
-				position relative
-				align-items flex-end
-				padding-left 0
+			position relative
+			align-items flex-end
+			padding-left 0
 		}
 
 		&:nth-child(1) {
@@ -28,83 +26,87 @@
 		}
 
 		&:nth-child(2) {
-			left -15%
+			left -10%
 		}
 		&:nth-child(3) {
-			left -30%
+			left -20%
 		}
 		&:nth-child(4) {
-			left -45%
+			left -30%
 		}
 	}
 }
 
 .nested-innovative {
+	display flex
+	flex-direction column
+	align-items flex-end
 	box-sizing border-box
-	padding-left 44%
+	margin auto
 	max-width 100%
 	width 501px
 
 	&__item {
 		position relative
 		display block
-		width 100%
+		width 56%
 		height auto
 
 		&:nth-child(2) {
-			margin-top -85%
-			margin-left -40%
+			left -22%
+			margin-top -45%
 		}
 
 		&:nth-child(3) {
-			margin-top -85%
-			margin-left -80%
+			left -44%
+			margin-top -45%
 		}
 	}
 }
 
 .nested-training {
+	display flex
+	flex-direction column
+	align-items flex-end
 	box-sizing border-box
-	padding-left 31%
 	max-width 100%
 	width 600px
 
 	&-2 {
-		width 550px
-		padding-left 21%
+		width 564px
 	}
 
 	&__item {
 		position relative
 		display block
-		width 100%
+		margin-top -2.5%
+		width 80%
 		height auto
 		border-radius 10px
 		box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
-		margin-top -2.5%
 
 		&:nth-child(1) {
 			margin-top 0
 		}
 
 		&:nth-child(2) {
-			margin-left -8.8%
+			left -4%
 		}
 
 		&:nth-child(3) {
-			margin-left -8.8% * 2
+			left -8%
 		}
 
 		&:nth-child(4) {
-			margin-left -8.8% * 3
+			left -12%
 		}
 
 		&:nth-child(5) {
-			margin-left -8.8% * 4
+			left -16%
 		}
 
 		&:nth-child(6) {
-			margin-left -8.8% * 5
+			left -20%
 		}
   //
 	// 	&:nth-child(2) {
@@ -120,48 +122,40 @@
 }
 
 .nested-course {
+	display flex
+	flex-direction column
+	align-items flex-end
 	box-sizing border-box
-	padding-left 40%
 	max-width 100%
 	width 420px
 
 	&__item {
 		position relative
 		display block
-		width 100%
+		width 60%
 		height auto
 		border-radius 10px
 		box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
-		margin-top -2.5%
-
-		&:nth-child(1) {
-			margin-top 0
-		}
 
 		&:nth-child(2) {
-			margin-top -66%
-			margin-left -66%
+			left -40%
+			margin-top -40%
 		}
 	}
-	// @media (min-width $xs) {
-	// 	display flex
-	// 	justify-content flex-start
-	// }
-  //
-	// @media (min-width $md) {
-	// 	justify-content flex-end
-	// }
 }
+
 .nested-book {
+	display flex
+	flex-direction column
+	align-items flex-end
 	box-sizing border-box
-	padding-left 40%
 	max-width 100%
 	width 460px
 
 	&__item {
 		position relative
 		display block
-		width 100%
+		width 65%
 		height auto
 		border-radius 10px
 		box-shadow 0 8px 16px 1px rgba(0, 0, 0, .21)
@@ -171,8 +165,8 @@
 		}
 
 		&:nth-child(2) {
-			margin-top -66%
-			margin-left -66%
+			left -35%
+			margin-top -43%
 		}
 	}
 }
@@ -234,8 +228,8 @@
 		}
 
 		@media (min-width $md) {
-			width 33.333%
 			padding 0 20px 35px
+			width 33.333%
 		}
 
 		@media (min-width $lg) {
