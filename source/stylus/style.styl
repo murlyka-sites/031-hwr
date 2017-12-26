@@ -141,13 +141,18 @@
 .section-main {
 	box-sizing border-box
 	padding 70px 0 40px
+	text-align center
 
 	@media (min-width $md) {
 		padding 150px 0 100px
 	}
 
+	@media (min-width $lg) {
+		text-align left
+	}
+
 	&__container {
-		@media (min-width $md) {
+		@media (min-width $lg) {
 			display flex
 			align-items flex-start
 			justify-content space-between
@@ -165,13 +170,18 @@
 
 .section-innovative {
 	padding 50px 0
+	text-align center
 
 	@media (min-width $md) {
 		padding 100px 0
 	}
 
+	@media (min-width $lg) {
+		text-align left
+	}
+
 	&__container {
-		@media (min-width $md) {
+		@media (min-width $lg) {
 			display flex
 			align-items flex-start
 			justify-content space-between
@@ -340,7 +350,7 @@
 
 	&__pr {
 		display block
-		margin-top auto
+		margin auto auto 0
 		max-width 100%
 		height auto
 	}
