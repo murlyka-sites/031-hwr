@@ -20,7 +20,7 @@ html(lang="ru")
 				.section-header__column.section-header__column_auth
 					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#") Вход / Регистрация
 						
-		section.section-main.section.paper-royal-blue
+		section.section-main.section.paper-royal-blue#section-main
 			.section__container.section-main__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-30 Онлайн-школа
@@ -39,7 +39,7 @@ html(lang="ru")
 						img.nested-main__item(src="images/main-4.svg" width="350" heihgt="85")
 					.visible.hidden-md
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Подробная информация
-		section.section-innovative.section.paper-verdepechat
+		section.section-innovative.section.paper-verdepechat#section-innovative
 			.section__container.section-innovative__container
 				.section-innovative__column.section-innovative__column_desc
 					h2.h2.offset-b-40 Инновационное 
@@ -53,13 +53,13 @@ html(lang="ru")
 						br.hidden.visible-md
 						| а результат экзамена возрастает в среднем в 2 раза!
 					.hidden.visible-md
-						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
+						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#section-training" data-scroll) Дальше
 				.section-innovative__column.section-innovative__column_pr
 					.nested-innovative
 						img.nested-innovative__item(src="images/inno-3.png" width="280" heihgt="330")
 						img.nested-innovative__item(src="images/inno-2.png" width="280" heihgt="330")
 						img.nested-innovative__item(src="images/inno-1.png" width="280" heihgt="330")
-		section.section-training.section
+		section.section-training.section#section-training
 			.section__container.section-training__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-40.color-marengo Тренируйся на
@@ -70,7 +70,7 @@ html(lang="ru")
 					a.button.button_type_link.button_size_md.button_theme_border-tomato.offset-b-40(href="#") Как это работает?
 					p.slogan.offset-b-40.color-gray-blue Прокачивай свой русский в игровой форме
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-course" data-scroll) Дальше
 				.section__column.section__column_pr
 					.nested-training
 						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79")
@@ -79,7 +79,7 @@ html(lang="ru")
 						img.nested-training__item(src="images/training-4.svg" width="475" heihgt="79")
 						img.nested-training__item(src="images/training-5.svg" width="475" heihgt="79")
 						img.nested-training__item(src="images/training-6.svg" width="475" heihgt="79")
-		section.section-course.section.paper-coral
+		section.section-course.section.paper-coral#section-course
 			.section__container.section-course__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-30 Готовься к ОГЭ и ЕГЭ 
@@ -92,12 +92,12 @@ html(lang="ru")
 						br.hidden.visible-md
 						| ответить на твой вопрос
 					.hidden.visible-md
-						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#") Дальше
+						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#section-book" data-scroll) Дальше
 				.section__column.section__column_pr
 					.section-course__nested: .nested-course
 						img.nested-course__item(width="250" height="250" src="images/course-1.svg")
 						img.nested-course__item(width="250" height="250" src="images/course-2.svg")
-		section.section-book.section
+		section.section-book.section#section-book
 			.section__container.section-book__container
 				.section-book__column.section-book__column_desc
 					h2.h2.offset-b-40.color-marengo Изучай учебник, 
@@ -112,12 +112,12 @@ html(lang="ru")
 						br.hidden.visible-md
 						| Он всегда под твоей рукой!
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-gameplay" data-scroll) Дальше
 				.section-book__column.section-book__column_pr
 					.section-book__nested: .nested-book
 						img.nested-book__item(width="300" height="301" src="images/book-1.svg")
 						img.nested-book__item(width="300" height="301" src="images/book-2.svg")
-		section.section-gameplay.section.paper-orange-pink
+		section.section-gameplay.section.paper-orange-pink#section-gameplay
 			.section__container.section-gameplay__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-50.color-wet-asphalt Всё это —
@@ -128,7 +128,7 @@ html(lang="ru")
 						br.hidden.visible-md
 						| задания от матрёшки Мани. Легко и просто!
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-teacher" data-scroll) Дальше
 				.section__column.section__column_pr
 					.nested-gameplay
 						.nested-gameplay__item
@@ -137,7 +137,7 @@ html(lang="ru")
 							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation")
 						.nested-gameplay__item
 							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation")
-		section.section-teacher.section.paper-somon
+		section.section-teacher.section.paper-somon#section-teacher
 			.section__container.section-teacher__container
 				.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
 					h3.h3.offset-b-30 Преподаватель курса 
@@ -156,10 +156,10 @@ html(lang="ru")
 						br.hidden.visible-md
 						| борьбе
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-cost" data-scroll) Дальше
 				.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr
 					img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович")
-		section.section-cost.section.paper-denim-blue
+		section.section-cost.section.paper-denim-blue#section-cost
 			.section__container.section-training__container
 				.section__column.section__column_desc
 					h2.h1.offset-b-30 Стоимость президентского
@@ -171,14 +171,14 @@ html(lang="ru")
 						br.hidden.visible-md
 						| Первое занятие бесплатно
 					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#") Дальше
+						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-register" data-scroll) Дальше
 				.section__column.section__column_pr
 					.section-cost__nested: .nested-training.nested-training-2
 						img.nested-training__item(src="images/training-1.svg" width="475" heihgt="79")
 						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79")
 						img.nested-training__item(src="images/training-7.svg" width="475" heihgt="79")
 											
-		section.section-register.section.paper-medium-magenta.text-center
+		section.section-register.section.paper-medium-magenta.text-center#section-register
 			.section__container.section-register__container
 				h2.h1.offset-b-40 Зарегистрируйся и получи 
 					br.hidden.visible-md
@@ -220,6 +220,28 @@ html(lang="ru")
 		div(hidden)
 			.popup-politic#politic
 				include politic.html
+			.popup-auth
+				header.popup-auth__header
+					ul.pupup-auth__nav.nav-popup-auth
+						li.nav-popup-auth__item(): a.nav-popup-auth__link.active(href="#") Регистрация
+						li.nav-popup-auth__item(): a.nav-popup-auth__link(href="#") Вход
+				.popup-auth__body
+					.nested-popup-form
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+						.nested-popup-form__politic
+							input.field-checkbox.offset-r-10(type="checkbox" required)
+							| Принимаю условия 
+							a.link(href="#") пользовательского соглашения
+							|  и 
+							a.link(href="#") политики обработки персональных данных
+						.nested-popup-form__submit
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
+		script(src="js/main.js")
