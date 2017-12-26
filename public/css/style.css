@@ -969,6 +969,9 @@
     display: block;
   }
 }
+:focus {
+  outline: none;
+}
 .selectric .label {
   margin: 5px 0 0;
   color: #b4b4b4;
