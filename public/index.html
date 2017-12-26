@@ -10,13 +10,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;amp;subset=cyrillic">
-		<link rel="stylesheet" href="css/style.css?ts=1514264099406">
+		<link rel="stylesheet" href="css/style.css?ts=1514268222567">
 	</head>
 	<body class="page">
 		<div class="section-header section">
 			<div class="section__container section-header__container">
 				<div class="section-header__column section-header__column_logo"><a href="#"><img class="section-header__logo" src="images/logo-white.svg" width="241" height="38" alt="Логотип: Как правильно"></a></div>
-				<div class="section-header__column section-header__column_auth"><a class="button button_size_sm button_type_link button_theme_border-white" href="#">Вход / Регистрация</a></div>
+				<div class="section-header__column section-header__column_auth"><a class="button button_size_sm button_type_link button_theme_border-white" href="#reg" data-fancybox>Вход / Регистрация</a></div>
 			</div>
 		</div>
 		<section class="section-main section paper-royal-blue" id="section-main">
@@ -425,38 +425,68 @@
 <p style="text-align: center;" dir="ltr"><br><br><br><br></p>
 
 			</div>
-			<div class="popup-auth">
+			<div class="popup-auth" id="reg">
 				<header class="popup-auth__header">
-					<ul class="pupup-auth__nav nav-popup-auth">
-						<li class="nav-popup-auth__item"><a class="nav-popup-auth__link active" href="#">Регистрация</a></li>
-						<li class="nav-popup-auth__item"><a class="nav-popup-auth__link" href="#">Вход</a></li>
+					<ul class="pupup-auth__nav nested-nav-auth">
+						<li class="nested-nav-auth__item"><span class="nested-nav-auth__link active">Регистрация</span></li>
+						<li class="nested-nav-auth__item"><a class="nested-nav-auth__link" href="#auth" data-to-popup>Вход</a></li>
 					</ul>
 				</header>
 				<div class="popup-auth__body">
-					<div class="nested-popup-form">
+					<form class="nested-popup-form">
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<input class="field field_available" placeholder="Фамилия">
 						</div>
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<input class="field field_available" placeholder="Имя">
 						</div>
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<select class="field field_available" placeholder="Класс обучения">
+								<option selected disabled>Класс обучения</option>
+								<opition>1 Класс</opition>
+								<opition>2 Класс</opition>
+								<opition>3 Класс</opition>
+								<opition>4 Класс</opition>
+							</select>
 						</div>
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<input class="field field_available" type="email" placeholder="Электронная почта">
 						</div>
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<input class="field field_available" type="password" placeholder="Пароль">
 						</div>
 						<div class="nested-popup-form__field">
-							<input class="field field_available" placeholder="Класс обучения">
+							<input class="field field_available" type="password" placeholder="Повторить пароль">
 						</div>
 						<div class="nested-popup-form__politic">
-							<input class="field-checkbox offset-r-10" type="checkbox" required>Принимаю условия <a class="link" href="#">пользовательского соглашения</a> и <a class="link" href="#">политики обработки персональных данных</a>
+							<input class="field-checkbox offset-r-10" id="check-politic-1" type="checkbox" required><span>
+								<label for="check-politic-1">Принимаю условия </label><a class="link" href="#">пользовательского соглашения</a> и <a class="link" href="#">политики обработки персональных данных</a></span>
 						</div>
-						<div class="nested-popup-form__submit"></div>
-					</div>
+						<div class="nested-popup-form__submit text-center">
+							<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral" type="submit">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="popup-auth" id="auth">
+				<header class="popup-auth__header">
+					<ul class="pupup-auth__nav nested-nav-auth">
+						<li class="nested-nav-auth__item"><a class="nested-nav-auth__link" href="#reg" data-to-popup>Регистрация</a></li>
+						<li class="nested-nav-auth__item"><span class="nested-nav-auth__link active">Вход</span></li>
+					</ul>
+				</header>
+				<div class="popup-auth__body">
+					<form class="nested-popup-form">
+						<div class="nested-popup-form__field">
+							<input class="field field_available" type="email" placeholder="Электронная почта">
+						</div>
+						<div class="nested-popup-form__field">
+							<input class="field field_available" type="password" placeholder="Пароль">
+						</div>
+						<div class="nested-popup-form__submit text-center">
+							<button class="button button_type_button button_size_md button_theme_coral button_shadow_coral" type="submit">Войти</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

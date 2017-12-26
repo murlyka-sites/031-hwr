@@ -274,3 +274,51 @@
 		display block
 	}
 }
+
+.nested-nav-auth {
+	display flex
+	justify-content center
+	align-items stretch
+	margin 0
+	padding 0
+	height 72px
+	border-bottom 3px solid $color-lavender
+	list-style-type none
+
+	&__item {
+		margin 0 40px -3px
+	}
+
+	&__link {
+		display flex
+		align-items center
+		box-sizing border-box
+		padding 5px
+		height 100%
+		color black
+		text-decoration none
+		font-size 21px
+		font-family "Proxima Nova", sans-serif
+
+		&:focus {
+			outline none
+		}
+
+		&.active {
+			border-bottom 3px solid $color-indigo-creole
+			color $color-indigo-creole
+		}
+	}
+}
+
+.nested-popup-form {
+	&__field {
+		margin-bottom 8px
+	}
+
+	&__politic {
+		display flex
+		margin-bottom 20px
+		padding-top 8px
+	}
+}

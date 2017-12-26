@@ -18,7 +18,7 @@ html(lang="ru")
 				.section-header__column.section-header__column_logo
 					a(href="#"): img.section-header__logo(src="images/logo-white.svg" width="241" height="38" alt="Логотип: Как правильно")
 				.section-header__column.section-header__column_auth
-					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#") Вход / Регистрация
+					a.button.button_size_sm.button_type_link.button_theme_border-white(href="#reg" data-fancybox) Вход / Регистрация
 						
 		section.section-main.section.paper-royal-blue#section-main
 			.section__container.section-main__container
@@ -220,26 +220,44 @@ html(lang="ru")
 		div(hidden)
 			.popup-politic#politic
 				include politic.html
-			.popup-auth
+			.popup-auth#reg
 				header.popup-auth__header
-					ul.pupup-auth__nav.nav-popup-auth
-						li.nav-popup-auth__item(): a.nav-popup-auth__link.active(href="#") Регистрация
-						li.nav-popup-auth__item(): a.nav-popup-auth__link(href="#") Вход
+					ul.pupup-auth__nav.nested-nav-auth
+						li.nested-nav-auth__item(): span.nested-nav-auth__link.active Регистрация
+						li.nested-nav-auth__item(): a.nested-nav-auth__link(href="#auth" data-to-popup) Вход
 				.popup-auth__body
-					.nested-popup-form
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
-						.nested-popup-form__field: input.field.field_available(placeholder="Класс обучения")
+					form.nested-popup-form()
+						.nested-popup-form__field: input.field.field_available(placeholder="Фамилия")
+						.nested-popup-form__field: input.field.field_available(placeholder="Имя")
+						.nested-popup-form__field: select.field.field_available(placeholder="Класс обучения")
+							option(selected disabled) Класс обучения
+							opition 1 Класс
+							opition 2 Класс
+							opition 3 Класс
+							opition 4 Класс
+						.nested-popup-form__field: input.field.field_available(type="email" placeholder="Электронная почта")
+						.nested-popup-form__field: input.field.field_available(type="password" placeholder="Пароль")
+						.nested-popup-form__field: input.field.field_available(type="password" placeholder="Повторить пароль")
 						.nested-popup-form__politic
-							input.field-checkbox.offset-r-10(type="checkbox" required)
-							| Принимаю условия 
-							a.link(href="#") пользовательского соглашения
-							|  и 
-							a.link(href="#") политики обработки персональных данных
-						.nested-popup-form__submit
+							input.field-checkbox.offset-r-10#check-politic-1(type="checkbox" required )
+							span
+								label(for="check-politic-1") Принимаю условия 
+								a.link(href="#") пользовательского соглашения
+								|  и 
+								a.link(href="#") политики обработки персональных данных
+						.nested-popup-form__submit.text-center
+							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(type="submit") Зарегистрироваться
+			.popup-auth#auth
+				header.popup-auth__header
+					ul.pupup-auth__nav.nested-nav-auth
+						li.nested-nav-auth__item(): a.nested-nav-auth__link(href="#reg" data-to-popup) Регистрация
+						li.nested-nav-auth__item(): span.nested-nav-auth__link.active Вход
+				.popup-auth__body
+					form.nested-popup-form()
+						.nested-popup-form__field: input.field.field_available(type="email" placeholder="Электронная почта")
+						.nested-popup-form__field: input.field.field_available(type="password" placeholder="Пароль")
+						.nested-popup-form__submit.text-center
+							button.button.button_type_button.button_size_md.button_theme_coral.button_shadow_coral(type="submit") Войти
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")

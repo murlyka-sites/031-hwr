@@ -298,6 +298,7 @@
   width: 100%;
 }
 .field-checkbox {
+  flex: none;
   width: 17px;
   height: 17px;
   vertical-align: middle;
@@ -712,8 +713,54 @@
 .nested-social__icon {
   display: block;
 }
+.nested-nav-auth {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  height: 72px;
+  border-bottom: 3px solid #e8e8e8;
+  list-style-type: none;
+}
+.nested-nav-auth__item {
+  margin: 0 40px -3px;
+}
+.nested-nav-auth__link {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 100%;
+  color: #000;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Proxima Nova", sans-serif;
+}
+.nested-nav-auth__link:focus {
+  outline: none;
+}
+.nested-nav-auth__link.active {
+  border-bottom: 3px solid #5b6ec0;
+  color: #5b6ec0;
+}
+.nested-popup-form__field {
+  margin-bottom: 8px;
+}
+.nested-popup-form__politic {
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}
 .popup-politic {
   max-width: 875px;
+}
+.popup-auth {
+  max-width: 100%;
+  width: 520px;
+}
+.popup-auth__header {
+  margin: -24px -24px 35px;
 }
 .hidden {
   display: none;
