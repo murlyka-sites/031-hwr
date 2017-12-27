@@ -19,6 +19,43 @@
 	outline none
 }
 
+body .swiper {
+	&-container {
+		@media (min-width $md) {
+			padding 0 100px
+		}
+
+		@media (min-width $lg) {
+			padding 0
+		}
+	}
+
+	&-button {
+		&-prev,
+		&-next {
+			top 205px
+			padding 0
+			width 68px
+			height 68px
+			border none
+			border-radius 50%
+			background hsla(0, 0, 100%, .237)
+
+			@media (min-width $sm) {
+				top 275px
+			}
+
+			@media (min-width $lg) {
+				top 50%
+			}
+
+			&:hover {
+				background hsla(0, 0, 100%, .516)
+			}
+		}
+	}
+}
+
 .selectric {
 
 	.label {
@@ -324,13 +361,14 @@
 
 .section-teacher {
 	padding 40px 0 0
+	text-align center
 
 	@media (min-width $md) {
 		padding 80px 0 0
 	}
 
 	&__container {
-		@media (min-width $md) {
+		@media (min-width $lg) {
 			display flex
 			justify-content space-between
 		}
@@ -350,9 +388,17 @@
 
 	&__pr {
 		display block
-		margin auto auto 0
+		margin auto auto 20px
 		max-width 100%
+		width 200px
 		height auto
+		border-radius 50%
+
+		@media (min-width $lg) {
+			margin auto auto 0
+			width auto
+			border-radius 0
+		}
 	}
 }
 
@@ -372,10 +418,6 @@
 
 .section-register {
 	padding 90px 0 60px
-
-	@media (min-width $sm) {
-
-	}
 
 	&__form {
 		margin-bottom 50px

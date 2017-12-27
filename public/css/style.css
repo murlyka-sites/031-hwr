@@ -334,26 +334,7 @@
   font-weight: 400;
   font-size: 18px;
   font-family: "Proxima Nova", sans-serif;
-}
-.field::-webkit-input-placeholder,
-.selectric::-webkit-input-placeholder {
-/* Chrome/Opera/Safari */
-  color: #b4b4b4;
-}
-.field::-moz-placeholder,
-.selectric::-moz-placeholder {
-/* Firefox 19+ */
-  color: #b4b4b4;
-}
-.field:-ms-input-placeholder,
-.selectric:-ms-input-placeholder {
-/* IE 10+ */
-  color: #b4b4b4;
-}
-.field:-moz-placeholder,
-.selectric:-moz-placeholder {
-/* Firefox 18- */
-  color: #b4b4b4;
+  placeholder: #b4b4b4;
 }
 .field:focus,
 .selectric:focus {
@@ -1020,6 +1001,42 @@
 :focus {
   outline: none;
 }
+@media (min-width: 992px) {
+  body .swiper-container {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 1220px) {
+  body .swiper-container {
+    padding: 0;
+  }
+}
+body .swiper-button-prev,
+body .swiper-button-next {
+  top: 205px;
+  padding: 0;
+  width: 68px;
+  height: 68px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.237);
+}
+@media (min-width: 768px) {
+  body .swiper-button-prev,
+  body .swiper-button-next {
+    top: 275px;
+  }
+}
+@media (min-width: 1220px) {
+  body .swiper-button-prev,
+  body .swiper-button-next {
+    top: 50%;
+  }
+}
+body .swiper-button-prev:hover,
+body .swiper-button-next:hover {
+  background: rgba(255,255,255,0.516);
+}
 .selectric .label {
   margin: 5px 0 0;
   color: #b4b4b4;
@@ -1329,13 +1346,14 @@
 }
 .section-teacher {
   padding: 40px 0 0;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .section-teacher {
     padding: 80px 0 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1220px) {
   .section-teacher__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1355,9 +1373,18 @@
 }
 .section-teacher__pr {
   display: block;
-  margin: auto auto 0;
+  margin: auto auto 20px;
   max-width: 100%;
+  width: 200px;
   height: auto;
+  border-radius: 50%;
+}
+@media (min-width: 1220px) {
+  .section-teacher__pr {
+    margin: auto auto 0;
+    width: auto;
+    border-radius: 0;
+  }
 }
 .section-cost {
   padding: 40px 0;

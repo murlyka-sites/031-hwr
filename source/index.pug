@@ -145,28 +145,34 @@ html(lang="ru")
 							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
 						.nested-gameplay__item
 							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="0" data-svg-fallback)
-		section.section-teacher.section.paper-somon#section-teacher
-			.section__container.section-teacher__container
-				.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
-					h3.h3.offset-b-30(data-aos="fade" data-aos-delay="") Преподаватель курса 
-						br
-						| ОГЭ по русскому языку
-					h4.h4.offset-b-30(data-aos="fade" data-aos-delay="100") Хасаншин Азат Нафисович
-					p.slogan.text-left(data-aos="fade" data-aos-delay="200") — Основатель, генеральный директор, 
-						br.hidden.visible-md
-						| онлайн-школы «Как Правильно»
-					p.slogan.text-left(data-aos="fade" data-aos-delay="300") — Победитель всероссийских олимпиад 
-						br.hidden.visible-md
-						| и конференций по русскому языку
-					p.slogan.text-left(data-aos="fade" data-aos-delay="400") — Автор научно-исследовательских работ
-					p.slogan.text-left(data-aos="fade" data-aos-delay="500") — Отличник
-					p.slogan.offset-b-40.text-left(data-aos="fade" data-aos-delay="600") — Кандидат в мастера спорта по спортивной 
-						br.hidden.visible-md
-						| борьбе
-					.hidden.visible-md
-						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-cost" data-scroll data-aos="fade" data-aos-delay="600") Дальше
-				.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr
-					img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-up")
+		section.section-teacher.section.paper-somon#section-teacher: .swiper-container
+			button.swiper-button-prev: img(src="images/swiper-prev.svg" width="68" height="68")
+			button.swiper-button-next: img(src="images/swiper-next.svg" width="68" height="68")
+			.swiper-wrapper: each i in [1,2,3,4]
+				.swiper-slide: .section__container.section-teacher__container
+					
+					.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
+						h3.h3.offset-b-30(data-aos="fade" data-aos-delay="") Преподаватель курса 
+							br
+							| ОГЭ по русскому языку
+						h4.h4.offset-b-30(data-aos="fade" data-aos-delay="100") Хасаншин Азат Нафисович
+						.hidden-lg
+							img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-up")
+						p.slogan.text-left(data-aos="fade" data-aos-delay="200") — Основатель, генеральный директор, 
+							br.hidden.visible-lg
+							| онлайн-школы «Как Правильно»
+						p.slogan.text-left(data-aos="fade" data-aos-delay="300") — Победитель всероссийских олимпиад 
+							br.hidden.visible-lg
+							| и конференций по русскому языку
+						p.slogan.text-left(data-aos="fade" data-aos-delay="400") — Автор научно-исследовательских работ
+						p.slogan.text-left(data-aos="fade" data-aos-delay="500") — Отличник
+						p.slogan.offset-b-40.text-left(data-aos="fade" data-aos-delay="600") — Кандидат в мастера спорта по спортивной 
+							br.hidden.visible-lg
+							| борьбе
+						.hidden.visible-md
+							a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-cost" data-scroll data-aos="fade" data-aos-delay="600") Дальше
+					.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr.hidden.visible-lg
+						img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-up")
 		section.section-cost.section.paper-denim-blue#section-cost
 			.section__container.section-training__container
 				.section__column.section__column_desc
@@ -298,5 +304,6 @@ html(lang="ru")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js")
 		script(src="selectric/jquery.selectric.min.js")
-		
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js")
 		script(src="js/main.js")
