@@ -21,13 +21,7 @@
 
 body .swiper {
 	&-container {
-		@media (min-width $md) {
-			padding 0 100px
-		}
 
-		@media (min-width $lg) {
-			padding 0
-		}
 	}
 
 	&-button {
@@ -152,6 +146,7 @@ body .swiper {
 
 	&__container {
 		display flex
+		align-items center
 		justify-content space-between
 		padding 20px 15px
 	}
@@ -168,8 +163,13 @@ body .swiper {
 	}
 
 	&__logo {
+		display block
 		max-width 100%
 		height auto
+		
+		@media (min-width $mlg) {
+			width calc(20vw)
+		}
 	}
 
 	&__button {}
@@ -195,6 +195,8 @@ body .swiper {
 			justify-content space-between
 		}
 	}
+
+
 
 	&__nested {
 		margin 15px auto 25px
@@ -281,16 +283,6 @@ body .swiper {
 			justify-content space-between
 		}
 	}
-
-	&__nested {
-		margin auto
-		max-width 100%
-		width 420px
-
-		@media (min-width $md) {
-			padding-top 0
-		}
-	}
 }
 
 .section-book {
@@ -316,12 +308,6 @@ body .swiper {
 		&_pr {
 			flex none
 		}
-	}
-
-	&__nested {
-		margin auto
-		max-width 100%
-		width 460px
 	}
 }
 
@@ -356,6 +342,10 @@ body .swiper {
 			width 225px
 			height auto
 		}
+
+		@media (min-width $mlg) {
+			width 100%
+		}
 	}
 }
 
@@ -364,13 +354,14 @@ body .swiper {
 	text-align center
 
 	@media (min-width $md) {
-		padding 80px 0 0
+		padding 80px 100px 0
 	}
 
 	&__container {
 		@media (min-width $lg) {
 			display flex
 			justify-content space-between
+			text-align left
 		}
 	}
 
@@ -407,12 +398,6 @@ body .swiper {
 
 	@media (min-width $md) {
 		padding 140px 0 80px
-	}
-
-	&__nested {
-		margin 0 auto
-		max-width 100%
-		width 550px
 	}
 }
 

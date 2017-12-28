@@ -1,12 +1,36 @@
 .section {
 	overflow hidden
+	box-sizing border-box
 	max-width 100%
 	color white
+
+	&_screen_mlg {
+		@media (min-width $mlg) {
+			display flex
+			flex-direction column
+			justify-content center
+			min-height 100vh
+		}
+	}
 
 	&__container {
 		box-sizing border-box
 		margin 0 auto
 		padding 0 15px
 		max-width 1200px
+
+		@media (min-width $mlg) {
+			padding 0 75px
+			max-width none
+			width 100%
+		}
+	}
+
+	&__column {
+		&_pr {
+			@media (min-width $mlg) {
+				width 40%
+			}
+		}
 	}
 }

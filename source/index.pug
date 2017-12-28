@@ -26,7 +26,7 @@ html(lang="ru")
 					.hidden.visible-sm
 						a.button.button_size_sm.button_type_link.button_theme_border-white(href="#reg" data-fancybox) Вход / Регистрация
 						
-		section.section-main.section.paper-royal-blue#section-main
+		section.section-main.section.section_screen_mlg.paper-royal-blue#section-main
 			.section__container.section-main__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-30(data-aos="fadet" data-aos-delay) Онлайн-школа
@@ -45,7 +45,7 @@ html(lang="ru")
 						img.nested-main__item(src="images/main-2.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="200" data-svg-fallback)
 						img.nested-main__item(src="images/main-3.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="400" data-svg-fallback)
 						img.nested-main__item(src="images/main-4.svg" width="350" heihgt="85" data-aos="fade-left" data-aos-delay="600" data-svg-fallback)
-		section.section-innovative.section.paper-verdepechat#section-innovative
+		section.section-innovative.section.section_screen_mlg.paper-verdepechat#section-innovative
 			.section__container.section-innovative__container
 				.section-innovative__column.section-innovative__column_desc
 					h2.h2.offset-b-40(data-aos="fade") Инновационное 
@@ -62,12 +62,12 @@ html(lang="ru")
 					.hidden-lg.offset-b-30
 					.hidden.visible-lg(data-aos="fade" data-aos-delay="300")
 						a.button.button_type_link.button_theme_white.button_size_md.button_shadow_black(href="#section-training" data-scroll) Дальше
-				.section-innovative__column.section-innovative__column_pr
+				.section-innovative__column.section-innovative__column_pr.section__column.section__column_pr
 					.nested-innovative
 						img.nested-innovative__item(src="images/inno-3.svg" width="280" height="330" data-aos="fade-left" data-aos-delay="0" data-svg-fallback)
 						img.nested-innovative__item(src="images/inno-2.svg" width="280" height="330" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
 						img.nested-innovative__item(src="images/inno-1.svg" width="280" height="330" data-aos="fade-left" data-aos-delay="300" data-svg-fallback)
-		section.section-training.section#section-training
+		section.section-training.section.section_screen_mlg#section-training
 			.section__container.section-training__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-40.color-marengo(data-aos="fade" data-aos-delay="") Тренируйся на
@@ -87,7 +87,7 @@ html(lang="ru")
 						img.nested-training__item(src="images/training-4.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="450" data-svg-fallback)
 						img.nested-training__item(src="images/training-5.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="600" data-svg-fallback)
 						img.nested-training__item(src="images/training-6.svg" width="475" heihgt="79" data-aos="fade-left" data-aos-delay="750" data-svg-fallback)
-		section.section-course.section.paper-coral#section-course
+		section.section-course.section.section_screen_mlg.paper-coral#section-course
 			.section__container.section-course__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-30(data-aos="fade" data-aos-delay="") Готовься к ОГЭ и ЕГЭ 
@@ -105,7 +105,7 @@ html(lang="ru")
 					.section-course__nested: .nested-course
 						img.nested-course__item(width="250" height="250" src="images/course-1.svg" data-aos="fade-left" data-aos-delay="" data-svg-fallback)
 						img.nested-course__item(width="250" height="250" src="images/course-2.svg" data-aos="fade" data-aos-delay="150" data-svg-fallback)
-		section.section-book.section#section-book
+		section.section-book.section.section_screen_mlg#section-book
 			.section__container.section-book__container
 				.section-book__column.section-book__column_desc
 					h2.h2.offset-b-40.color-marengo(data-aos="fade" data-aos-delay="") Изучай учебник, 
@@ -121,11 +121,11 @@ html(lang="ru")
 						| Он всегда под твоей рукой!
 					.hidden.visible-md
 						a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-gameplay" data-scroll data-aos="fade" data-aos-delay="450") Дальше
-				.section-book__column.section-book__column_pr
+				.section-book__column.section-book__column_pr.section__column.section__column_pr
 					.section-book__nested: .nested-book
 						img.nested-book__item(width="300" height="301" src="images/book-1.svg" data-aos="fade-left" data-svg-fallback)
 						img.nested-book__item(width="300" height="301" src="images/book-2.svg" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
-		section.section-gameplay.section.paper-orange-pink#section-gameplay
+		section.section-gameplay.section.section_screen_mlg.paper-orange-pink#section-gameplay
 			.section__container.section-gameplay__container
 				.section__column.section__column_desc
 					h2.h2.offset-b-50.color-wet-asphalt(data-aos="fade" data-aos-delay="") Всё это —
@@ -145,35 +145,38 @@ html(lang="ru")
 							img.section-gameplay__pr(src="images/gameplay-orange.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="150" data-svg-fallback)
 						.nested-gameplay__item
 							img.section-gameplay__pr(src="images/gameplay-blue.svg" width="225" height="350" role="presentation" data-aos="fade-left" data-aos-delay="0" data-svg-fallback)
-		section.section-teacher.section.paper-somon#section-teacher: .swiper-container
+		.swiper-container
 			button.swiper-button-prev: img(src="images/swiper-prev.svg" width="68" height="68")
 			button.swiper-button-next: img(src="images/swiper-next.svg" width="68" height="68")
 			.swiper-wrapper: each i in [1,2,3,4]
-				.swiper-slide: .section__container.section-teacher__container
-					
-					.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
-						h3.h3.offset-b-30(data-aos="fade" data-aos-delay="") Преподаватель курса 
-							br
-							| ОГЭ по русскому языку
-						h4.h4.offset-b-30(data-aos="fade" data-aos-delay="100") Хасаншин Азат Нафисович
-						.hidden-lg
+				.swiper-slide: section.section-teacher.section.section_screen_mlg.paper-somon#section-teacher
+			
+			
+					.section__container.section-teacher__container
+						
+						.section-teacher__column.section-teacher__column_desc.section__column.section__column_desc
+							h3.h3.offset-b-30(data-aos="fade" data-aos-delay="") Преподаватель курса 
+								br
+								| ОГЭ по русскому языку
+							h4.h4.offset-b-30(data-aos="fade" data-aos-delay="100") Хасаншин Азат Нафисович
+							.hidden-lg
+								img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-left")
+							p.slogan.text-left(data-aos="fade" data-aos-delay="200") — Основатель, генеральный директор, 
+								br.hidden.visible-lg
+								| онлайн-школы «Как Правильно»
+							p.slogan.text-left(data-aos="fade" data-aos-delay="300") — Победитель всероссийских олимпиад 
+								br.hidden.visible-lg
+								| и конференций по русскому языку
+							p.slogan.text-left(data-aos="fade" data-aos-delay="400") — Автор научно-исследовательских работ
+							p.slogan.text-left(data-aos="fade" data-aos-delay="500") — Отличник
+							p.slogan.offset-b-40.text-left(data-aos="fade" data-aos-delay="600") — Кандидат в мастера спорта по спортивной 
+								br.hidden.visible-lg
+								| борьбе
+							.hidden.visible-md
+								a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-cost" data-scroll data-aos="fade" data-aos-delay="600") Дальше
+						.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr.hidden.visible-lg
 							img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-left")
-						p.slogan.text-left(data-aos="fade" data-aos-delay="200") — Основатель, генеральный директор, 
-							br.hidden.visible-lg
-							| онлайн-школы «Как Правильно»
-						p.slogan.text-left(data-aos="fade" data-aos-delay="300") — Победитель всероссийских олимпиад 
-							br.hidden.visible-lg
-							| и конференций по русскому языку
-						p.slogan.text-left(data-aos="fade" data-aos-delay="400") — Автор научно-исследовательских работ
-						p.slogan.text-left(data-aos="fade" data-aos-delay="500") — Отличник
-						p.slogan.offset-b-40.text-left(data-aos="fade" data-aos-delay="600") — Кандидат в мастера спорта по спортивной 
-							br.hidden.visible-lg
-							| борьбе
-						.hidden.visible-md
-							a.button.button_type_link.button_size_md.button_theme_coral.button_shadow_coral(href="#section-cost" data-scroll data-aos="fade" data-aos-delay="600") Дальше
-					.section-teacher__column.section-teacher__column_pr.section__column.section__column_pr.hidden.visible-lg
-						img.section-teacher__pr(src="images/teacher.png" width="640", height="554" alt="Хасаншин Азат Нафисович" data-aos="fade-left")
-		section.section-cost.section.paper-denim-blue#section-cost
+		section.section-cost.section.section_screen_mlg.paper-denim-blue#section-cost
 			.section__container.section-training__container
 				.section__column.section__column_desc
 					h2.h1.offset-b-30(data-aos="fade" data-aos-delay="150") Стоимость президентского
@@ -192,7 +195,7 @@ html(lang="ru")
 						img.nested-training__item(src="images/training-2.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="400" data-svg-fallback)
 						img.nested-training__item(src="images/training-7.svg" width="475" heihgt="79" data-aos="fade" data-aos-delay="600" data-svg-fallback)
 											
-		section.section-register.section.paper-medium-magenta.text-center#section-register
+		section.section-register.section.section_screen_mlg.paper-medium-magenta.text-center#section-register
 			.section__container.section-register__container
 				h2.h1.offset-b-40 Зарегистрируйся и получи 
 					br.hidden.visible-md
