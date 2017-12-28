@@ -41,7 +41,7 @@
 	</FilesMatch>
 
 	#кэшировать флэш и изображения на месяц
-	<FilesMatch "\.(ico|gif|jpg|jpeg|png)$">
+	<FilesMatch "\.(ico|gif|jpg|jpeg|png|svg)$">
 		Header set Cache-Control "max-age=2592000"
 	</FilesMatch>
 </IfModule>
